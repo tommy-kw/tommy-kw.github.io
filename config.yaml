@@ -5,5 +5,5 @@ publishdir: "public"
 indexes:
   category: "categories"
 baseurl: "http://tommykw.github.io/"
-title: "Hugo Blog Template for GitHub Pages"
+title: "Hugo Blog Template for GitHub Pages t"
 ...
