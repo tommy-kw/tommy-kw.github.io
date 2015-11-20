@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title> on Tommykw Hugo Site </title>
+      <title>Golang on Tommykw Hugo Site </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://tommykw.github.io/</link>
+    <link>http://tommykw.github.io/categories/golang/</link>
     <language>en-us</language>
     
     
