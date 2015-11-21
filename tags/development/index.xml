@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Development on Tommykw Hugo Site </title>
+      <title>Development on Hola!! </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://tommykw.github.io/tags/development/</link>
+    <link>http://localhost:1313/tags/development/</link>
     <language>en-us</language>
     
     
@@ -11,20 +11,20 @@
     
     <item>
       <title>second</title>
-      <link>http://tommykw.github.io/post/second/</link>
+      <link>http://localhost:1313/post/second/</link>
       <pubDate>Fri, 20 Nov 2015 22:26:00 JST</pubDate>
       
-      <guid>http://tommykw.github.io/post/second/</guid>
+      <guid>http://localhost:1313/post/second/</guid>
       <description>&lt;p&gt;ブタゴリラこと、えろきーち　&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>first</title>
-      <link>http://tommykw.github.io/post/first/</link>
+      <link>http://localhost:1313/post/first/</link>
       <pubDate>Fri, 20 Nov 2015 22:25:05 JST</pubDate>
       
-      <guid>http://tommykw.github.io/post/first/</guid>
+      <guid>http://localhost:1313/post/first/</guid>
       <description>&lt;p&gt;ぶたごりらこと、エロキーチ&lt;/p&gt;
 </description>
     </item>
