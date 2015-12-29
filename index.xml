@@ -7,7 +7,19 @@
     <language>en-us</language>
     
     
-    <updated>Fri, 20 Nov 2015 22:25:05 JST</updated>
+    <updated>Fri, 20 Nov 2015 22:26:00 JST</updated>
+    
+    <item>
+      <title>Get the app apk from Android terminal</title>
+      <link>http://tommykw.github.io/post/second/</link>
+      <pubDate>Fri, 20 Nov 2015 22:26:00 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/second/</guid>
+      <description>&lt;p&gt;1.Connect to Android terminal
+2.adb shell pm list packages -f | grep $packagename
+3.apk pull $packagename&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Every day UI Automator</title>
@@ -15,7 +27,13 @@
       <pubDate>Fri, 20 Nov 2015 22:25:05 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/first/</guid>
-      <description></description>
+      <description>&lt;p&gt;UI testing framework. suitable for cross-app functional UI testing across system and installed apps.
+Attempt to seek new application design with UI Automator every day!&lt;/p&gt;
+
+&lt;p&gt;Android Studio -&amp;gt; Tools -&amp;gt; Android -&amp;gt; Android Device Monitor&lt;/p&gt;
+
+&lt;p&gt;hoi&lt;/p&gt;
+</description>
     </item>
     
   </channel>
