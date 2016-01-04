@@ -27,10 +27,18 @@
       <pubDate>Fri, 20 Nov 2015 22:25:05 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/first/</guid>
-      <description>&lt;p&gt;UI testing framework. suitable for cross-app functional UI testing across system and installed apps.
-Attempt to seek new application design with UI Automator every day!&lt;/p&gt;
+      <description>&lt;p&gt;UI Automator is UI testing framework on Android. suitable for cross-app functional UI testing across system and installed apps.
+Attempt to search new application design with UI Automator every day!&lt;/p&gt;
 
-&lt;p&gt;Android Studio -&amp;gt; Tools -&amp;gt; Android -&amp;gt; Android Device Monitor&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Usage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;Android Studio 
+Tools 
+Android 
+Android Device Monitor 
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
