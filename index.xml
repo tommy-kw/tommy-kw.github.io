@@ -17,7 +17,8 @@
       <guid>http://tommykw.github.io/post/second/</guid>
       <description>&lt;p&gt;1.Connect to Android terminal
 2.adb shell pm list packages -f | grep $packagename
-3.apk pull $packagename&lt;/p&gt;
+3.apk pull $packagename
+4.hoge&lt;/p&gt;
 </description>
     </item>
     
@@ -31,14 +32,14 @@
 Attempt to search new application design with UI Automator every day!&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Usage&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;Android Studio 
+&lt;li&gt;Usage
+&lt;code&gt;
+Android Studio 
 Tools 
 Android 
 Android Device Monitor 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
