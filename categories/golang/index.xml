@@ -7,25 +7,12 @@
     <language>en-us</language>
     
     
-    <updated>Fri, 20 Nov 2015 22:26:00 JST</updated>
-    
-    <item>
-      <title>Get the app apk from Android terminal</title>
-      <link>http://tommykw.github.io/post/second/</link>
-      <pubDate>Fri, 20 Nov 2015 22:26:00 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/second/</guid>
-      <description>&lt;p&gt;1.Connect to Android terminal
-2.adb shell pm list packages -f | grep $packagename
-3.apk pull $packagename
-4.hoge&lt;/p&gt;
-</description>
-    </item>
+    <updated>Sun, 20 Nov 2016 22:25:05 JST</updated>
     
     <item>
       <title>Every day UI Automator</title>
       <link>http://tommykw.github.io/post/first/</link>
-      <pubDate>Fri, 20 Nov 2015 22:25:05 JST</pubDate>
+      <pubDate>Sun, 20 Nov 2016 22:25:05 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/first/</guid>
       <description>&lt;p&gt;UI Automator is UI testing framework on Android. suitable for cross-app functional UI testing across system and installed apps.
@@ -40,6 +27,19 @@ Android
 Android Device Monitor 
 &lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get the app apk from Android terminal</title>
+      <link>http://tommykw.github.io/post/second/</link>
+      <pubDate>Fri, 20 Nov 2015 22:26:00 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/second/</guid>
+      <description>&lt;p&gt;1.Connect to Android terminal
+2.adb shell pm list packages -f | grep $packagename
+3.apk pull $packagename
+4.hoge&lt;/p&gt;
 </description>
     </item>
     
