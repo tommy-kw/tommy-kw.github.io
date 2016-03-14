@@ -7,7 +7,25 @@
     <language>en-us</language>
     
     
-    <updated>Fri, 20 Nov 2015 22:26:00 JST</updated>
+    <updated>Tue, 15 Mar 2016 06:20:50 JST</updated>
+    
+    <item>
+      <title>Software design patterns</title>
+      <link>http://tommykw.github.io/post/software-design-patterns/</link>
+      <pubDate>Tue, 15 Mar 2016 06:20:50 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/software-design-patterns/</guid>
+      <description>
+
+&lt;h1 id=&#34;design-patterns-in-android-and-java-s-core-libraries:cedcc138f48c75a986f318fd6d62e527&#34;&gt;Design Patterns in Android and Java&amp;rsquo;s core libraries&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Abstract factory&lt;/li&gt;
+&lt;li&gt;Builder&lt;/li&gt;
+&lt;li&gt;Prototype&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Get the app apk from Android terminal</title>
