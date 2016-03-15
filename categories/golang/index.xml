@@ -26,7 +26,11 @@
 &lt;li&gt;Singleton&lt;/li&gt;
 &lt;li&gt;Adapter&lt;/li&gt;
 &lt;li&gt;Bridge&lt;/li&gt;
-&lt;li&gt;Composite&lt;/li&gt;
+&lt;li&gt;Composite&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tommykw/GoogleAPI&#34;&gt;GoogleAPI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Facade&lt;/li&gt;
 &lt;li&gt;Flyweight&lt;/li&gt;
 &lt;li&gt;Proxy&lt;/li&gt;
