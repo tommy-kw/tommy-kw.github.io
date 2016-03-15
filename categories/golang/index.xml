@@ -23,6 +23,24 @@
 &lt;li&gt;Abstract factory&lt;/li&gt;
 &lt;li&gt;Builder&lt;/li&gt;
 &lt;li&gt;Prototype&lt;/li&gt;
+&lt;li&gt;Singleton&lt;/li&gt;
+&lt;li&gt;Adapter&lt;/li&gt;
+&lt;li&gt;Bridge&lt;/li&gt;
+&lt;li&gt;Composite&lt;/li&gt;
+&lt;li&gt;Facade&lt;/li&gt;
+&lt;li&gt;Flyweight&lt;/li&gt;
+&lt;li&gt;Proxy&lt;/li&gt;
+&lt;li&gt;Chain of responsibility&lt;/li&gt;
+&lt;li&gt;Command&lt;/li&gt;
+&lt;li&gt;Interpreter&lt;/li&gt;
+&lt;li&gt;Iterator&lt;/li&gt;
+&lt;li&gt;Mediator&lt;/li&gt;
+&lt;li&gt;Memento&lt;/li&gt;
+&lt;li&gt;Observer&lt;/li&gt;
+&lt;li&gt;State&lt;/li&gt;
+&lt;li&gt;Strategy&lt;/li&gt;
+&lt;li&gt;Template method&lt;/li&gt;
+&lt;li&gt;Visitor&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
