@@ -7,7 +7,26 @@
     <language>en-us</language>
     
     
-    <updated>Tue, 15 Mar 2016 06:20:50 JST</updated>
+    <updated>Wed, 16 Mar 2016 04:06:54 JST</updated>
+    
+    <item>
+      <title>Way to get the method for java compat</title>
+      <link>http://tommykw.github.io/post/Way-to-get-the-method-for-java-compat/</link>
+      <pubDate>Wed, 16 Mar 2016 04:06:54 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/Way-to-get-the-method-for-java-compat/</guid>
+      <description>&lt;p&gt;There is a way to get the method for java compat to become boolean name or getter name&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var bar: Int = 1
+    @JvmName(&amp;quot;getBar&amp;quot;) get
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On a data class case&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;data class Bar(@get:JvmName(&amp;quot;isBar&amp;quot;) val bar: Boolean)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Software design patterns</title>
