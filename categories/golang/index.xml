@@ -7,7 +7,27 @@
     <language>en-us</language>
     
     
-    <updated>Wed, 16 Mar 2016 04:06:54 JST</updated>
+    <updated>Fri, 18 Mar 2016 07:58:14 JST</updated>
+    
+    <item>
+      <title>kotlin bytecode</title>
+      <link>http://tommykw.github.io/post/kotlin-bytecode/</link>
+      <pubDate>Fri, 18 Mar 2016 07:58:14 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/kotlin-bytecode/</guid>
+      <description>&lt;p&gt;You are able to view the compoiled bytecode.&lt;br /&gt;
+You can learn more about hot it works under the covers.
+Kotlin plugin for IDEA comes with a bytecode view tool.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tools&lt;/li&gt;
+&lt;li&gt;Kotlin&lt;/li&gt;
+&lt;li&gt;Show Kotlin Bytecode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is killer feature.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Way to get the method for java compat</title>
