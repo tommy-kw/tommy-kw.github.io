@@ -7,7 +7,86 @@
     <language>en-us</language>
     
     
-    <updated>Fri, 20 Nov 2015 22:26:00 JST</updated>
+    <updated>Fri, 18 Mar 2016 07:58:14 JST</updated>
+    
+    <item>
+      <title>Kotlin bytecode</title>
+      <link>http://tommykw.github.io/post/kotlin-bytecode/</link>
+      <pubDate>Fri, 18 Mar 2016 07:58:14 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/kotlin-bytecode/</guid>
+      <description>&lt;p&gt;You are able to view the compoiled bytecode.&lt;br /&gt;
+You can learn more about hot it works under the covers.
+Kotlin plugin for IDEA comes with a bytecode view tool.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tools&lt;/li&gt;
+&lt;li&gt;Kotlin&lt;/li&gt;
+&lt;li&gt;Show Kotlin Bytecode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is killer feature.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Way to get the method for java compat</title>
+      <link>http://tommykw.github.io/post/Way-to-get-the-method-for-java-compat/</link>
+      <pubDate>Wed, 16 Mar 2016 04:06:54 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/Way-to-get-the-method-for-java-compat/</guid>
+      <description>&lt;p&gt;There is a way to get the method for java compat to become boolean name or getter name&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var bar: Int = 1
+    @JvmName(&amp;quot;getBar&amp;quot;) get
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On a data class case&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;data class Bar(@get:JvmName(&amp;quot;isBar&amp;quot;) val bar: Boolean)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software design patterns</title>
+      <link>http://tommykw.github.io/post/software-design-patterns/</link>
+      <pubDate>Tue, 15 Mar 2016 06:20:50 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/software-design-patterns/</guid>
+      <description>
+
+&lt;h1 id=&#34;design-patterns-in-android-and-java-s-core-libraries:cedcc138f48c75a986f318fd6d62e527&#34;&gt;Design Patterns in Android and Java&amp;rsquo;s core libraries&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Abstract factory&lt;/li&gt;
+&lt;li&gt;Builder&lt;/li&gt;
+&lt;li&gt;Prototype&lt;/li&gt;
+&lt;li&gt;Singleton&lt;/li&gt;
+&lt;li&gt;Adapter&lt;/li&gt;
+&lt;li&gt;Bridge&lt;/li&gt;
+&lt;li&gt;Composite&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tommykw/GoogleAPI&#34;&gt;GoogleAPI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Facade&lt;/li&gt;
+&lt;li&gt;Flyweight&lt;/li&gt;
+&lt;li&gt;Proxy&lt;/li&gt;
+&lt;li&gt;Chain of responsibility&lt;/li&gt;
+&lt;li&gt;Command&lt;/li&gt;
+&lt;li&gt;Interpreter&lt;/li&gt;
+&lt;li&gt;Iterator&lt;/li&gt;
+&lt;li&gt;Mediator&lt;/li&gt;
+&lt;li&gt;Memento&lt;/li&gt;
+&lt;li&gt;Observer&lt;/li&gt;
+&lt;li&gt;State&lt;/li&gt;
+&lt;li&gt;Strategy&lt;/li&gt;
+&lt;li&gt;Template method&lt;/li&gt;
+&lt;li&gt;Visitor&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Get the app apk from Android terminal</title>
@@ -17,8 +96,7 @@
       <guid>http://tommykw.github.io/post/second/</guid>
       <description>&lt;p&gt;1.Connect to Android terminal
 2.adb shell pm list packages -f | grep $packagename
-3.apk pull $packagename
-4.hoge&lt;/p&gt;
+3.apk pull $packagename&lt;/p&gt;
 </description>
     </item>
     

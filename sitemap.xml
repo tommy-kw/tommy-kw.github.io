@@ -3,8 +3,23 @@
   
   <url>
     <loc>http://tommykw.github.io/</loc>
-    <lastmod>2015-11-20T22:26:00+09:00</lastmod>
+    <lastmod>2016-03-18T07:58:14+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tommykw.github.io/post/kotlin-bytecode/</loc>
+    <lastmod>2016-03-18T07:58:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tommykw.github.io/post/Way-to-get-the-method-for-java-compat/</loc>
+    <lastmod>2016-03-16T04:06:54+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tommykw.github.io/post/software-design-patterns/</loc>
+    <lastmod>2016-03-15T06:20:50+09:00</lastmod>
   </url>
   
   <url>
