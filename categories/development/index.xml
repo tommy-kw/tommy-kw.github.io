@@ -16,7 +16,7 @@
       
       <guid>http://tommykw.github.io/post/kotlin-bytecode/</guid>
       <description>&lt;p&gt;You are able to view the compoiled bytecode.&lt;br /&gt;
-You can learn more about hot it works under the covers.
+You can learn more about how it works under the covers.
 Kotlin plugin for IDEA comes with a bytecode view tool.&lt;/p&gt;
 
 &lt;ul&gt;
