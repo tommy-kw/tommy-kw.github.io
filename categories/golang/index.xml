@@ -7,7 +7,26 @@
     <language>en-us</language>
     
     
-    <updated>Fri, 18 Mar 2016 07:58:14 JST</updated>
+    <updated>Fri, 25 Mar 2016 14:28:07 JST</updated>
+    
+    <item>
+      <title>How to use kotlin run function</title>
+      <link>http://tommykw.github.io/post/how-to-use-kotlin-run-function/</link>
+      <pubDate>Fri, 25 Mar 2016 14:28:07 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/how-to-use-kotlin-run-function/</guid>
+      <description>&lt;p&gt;I don&amp;rsquo;t know that how to use run function in Kotlin.
+You might use as follows.&lt;/p&gt;
+
+&lt;p&gt;On kotlinc-jvm&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; val caller = null ?: run { println(&amp;quot;init&amp;quot;); {} }
+init
+&amp;gt;&amp;gt;&amp;gt; caller()
+kotlin.Unit
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Kotlin bytecode</title>
