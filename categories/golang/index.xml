@@ -7,7 +7,32 @@
     <language>en-us</language>
     
     
-    <updated>Fri, 25 Mar 2016 14:44:53 JST</updated>
+    <updated>Fri, 25 Mar 2016 15:06:18 JST</updated>
+    
+    <item>
+      <title>A comma separated</title>
+      <link>http://tommykw.github.io/post/a-comma-separated/</link>
+      <pubDate>Fri, 25 Mar 2016 15:06:18 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/a-comma-separated/</guid>
+      <description>&lt;p&gt;Attempt to a comma-separated in Kotlin.
+There are several patterns. It can be written more concisely than Java.&lt;/p&gt;
+
+&lt;p&gt;On kotlinc-jvm
+fold method&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; val list = listOf(1,2,3,4,5)
+&amp;gt;&amp;gt;&amp;gt; list.fold(StringBuilder()) { builder, i -&amp;gt; builder.append(&amp;quot;${i},&amp;quot;) }.substring(0, list.size * 2 - 1)
+1,2,3,4,5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Work in progress: kotlin-stdlib buildString&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt; buildString { append(list) }
+[1, 2, 3, 4, 5]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>How to use kotlin run function</title>
