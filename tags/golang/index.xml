@@ -66,7 +66,33 @@ SomeFunc
       <pubDate>Sat, 26 Mar 2016 20:02:56 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/generic_programming/</guid>
-      <description>&lt;p&gt;Generic Programming is a computer programming method that does not depend on the data format.&lt;/p&gt;
+      <description>
+
+&lt;p&gt;Generic Programming is a computer programming method that does not depend on the data format.&lt;/p&gt;
+
+&lt;h1 id=&#34;overview:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;Generic programming regardless of the fact that either pass or to instantiate the code in the data type,
+or the data type as a parameter. You can use the same source code.
+This programming is a very powerful, dynamic, highly parameterized software is difficult to understand
+than more static software.&lt;/p&gt;
+
+&lt;h1 id=&#34;such-as:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Such as&lt;/h1&gt;
+
+&lt;h2 id=&#34;java:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Java&lt;/h2&gt;
+
+&lt;p&gt;Generics has been added in JDK1.5. Generics of Java code to produce only one of the compiled version of the generic class.
+Generics Java class can use only the object type as the type parameter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;Integer&amp;gt; // correct
+List&amp;lt;int&amp;gt; // incorrect
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Generics is to check the correctness of the type at compile time.
+Generic type information is removed through a process referred to as a type deletion.
+This is referred to as the erasure type. Only the type information of the parent class is held.&lt;/p&gt;
+
+&lt;h2 id=&#34;haskell:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Haskell&lt;/h2&gt;
 </description>
     </item>
     
