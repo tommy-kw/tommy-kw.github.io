@@ -93,6 +93,8 @@ Generic type information is removed through a process referred to as a type dele
 This is referred to as the erasure type. Only the type information of the parent class is held.&lt;/p&gt;
 
 &lt;h2 id=&#34;haskell:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Haskell&lt;/h2&gt;
+
+&lt;p&gt;Haskell parameterized type, parametric polymorphism, there is a type class.&lt;/p&gt;
 </description>
     </item>
     
