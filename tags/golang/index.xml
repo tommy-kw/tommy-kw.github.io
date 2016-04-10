@@ -92,8 +92,11 @@ List&amp;lt;int&amp;gt; // incorrect
 Generic type information is removed through a process referred to as a type deletion.
 This is referred to as the erasure type. Only the type information of the parent class is held.&lt;/p&gt;
 
-&lt;p&gt;There are several grammar.
-- Bounded type parameters&lt;/p&gt;
+&lt;p&gt;There are several grammar.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bounded type parameters&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code&gt;class Dog&amp;lt;E extends Animal&amp;gt; {}
 &lt;/code&gt;&lt;/pre&gt;
