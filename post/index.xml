@@ -99,16 +99,18 @@ This is referred to as the erasure type. Only the type information of the parent
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Multiple bounds
-&lt;code&gt;
-class Foo&amp;lt;E extends A &amp;amp; B &amp;amp; C&amp;gt; {}
-&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Bounded wildcard
-&lt;code&gt;
-class Foo(List&amp;lt;? extends Number&amp;gt; list) {}
-&lt;/code&gt;
--&lt;/li&gt;
+&lt;li&gt;Multiple bounds&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;class Foo&amp;lt;E extends A &amp;amp; B &amp;amp; C&amp;gt; {}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bounded wildcard&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;class Foo(List&amp;lt;? extends Number&amp;gt; list) {}
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;haskell:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Haskell&lt;/h2&gt;
 
