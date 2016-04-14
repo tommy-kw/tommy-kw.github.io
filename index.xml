@@ -57,7 +57,7 @@ $ brew install haskell-stack
 
 &lt;p&gt;You can build with stack build&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ stack buuild
+&lt;pre&gt;&lt;code&gt;$ stack build
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;run-the-app:89ac81d93784c829817004930eb05e8f&#34;&gt;Run the app&lt;/h2&gt;
