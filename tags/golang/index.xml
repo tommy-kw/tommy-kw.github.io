@@ -7,7 +7,17 @@
     <language>en-us</language>
     
     
-    <updated>Tue, 12 Apr 2016 15:34:28 JST</updated>
+    <updated>Fri, 15 Apr 2016 21:23:09 JST</updated>
+    
+    <item>
+      <title>Multidex</title>
+      <link>http://tommykw.github.io/post/multidex/</link>
+      <pubDate>Fri, 15 Apr 2016 21:23:09 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/multidex/</guid>
+      <description>&lt;p&gt;This article describes the multidex in Android.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Monads tutorial</title>
