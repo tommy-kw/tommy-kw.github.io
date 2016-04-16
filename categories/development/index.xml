@@ -15,7 +15,9 @@
       <pubDate>Fri, 15 Apr 2016 21:23:09 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/multidex/</guid>
-      <description>&lt;p&gt;This article describes the multidex in Android.&lt;/p&gt;
+      <description>&lt;p&gt;This article describes the multidex in Android.
+dex file that exist in th package of the apk. that of the Dalvik Executable.
+Generated is converted from a class file.&lt;/p&gt;
 </description>
     </item>
     
