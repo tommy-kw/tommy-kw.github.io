@@ -15,10 +15,13 @@
       <pubDate>Tue, 19 Apr 2016 22:58:20 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/kotlin-any-none-all/</guid>
-      <description>&lt;p&gt;In this artile describes the colletion function of the stream api of Kotlin.&lt;/p&gt;
+      <description>
+
+&lt;p&gt;In this artile describes the colletion function of the stream api of Kotlin.&lt;/p&gt;
+
+&lt;h2 id=&#34;any:5d579fe2b66ec26434ad62ec9e0f74f8&#34;&gt;any&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;any&lt;/li&gt;
 &lt;li&gt;Or also applies to conditions in one&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -28,8 +31,9 @@ true
 false
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h2 id=&#34;none:5d579fe2b66ec26434ad62ec9e0f74f8&#34;&gt;none&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;none&lt;/li&gt;
 &lt;li&gt;It dose not apply to the conditions&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -39,8 +43,9 @@ true
 false
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h2 id=&#34;all:5d579fe2b66ec26434ad62ec9e0f74f8&#34;&gt;all&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;all&lt;/li&gt;
 &lt;li&gt;It applies to all conditions&lt;/li&gt;
 &lt;/ul&gt;
 
