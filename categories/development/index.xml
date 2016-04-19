@@ -7,10 +7,19 @@
     <language>en-us</language>
     
     
-    <updated>Sat, 16 Apr 2016 13:56:19 JST</updated>
+    <updated>Tue, 19 Apr 2016 22:58:20 JST</updated>
     
     <item>
-      <title>gc engineering</title>
+      <title>Kotlin any none all</title>
+      <link>http://tommykw.github.io/post/kotlin-any-none-all/</link>
+      <pubDate>Tue, 19 Apr 2016 22:58:20 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/kotlin-any-none-all/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GC Engineering</title>
       <link>http://tommykw.github.io/post/gc-engineering/</link>
       <pubDate>Sat, 16 Apr 2016 13:56:19 JST</pubDate>
       
@@ -19,7 +28,7 @@
     </item>
     
     <item>
-      <title>image processing engineering</title>
+      <title>Image Processing Engineering</title>
       <link>http://tommykw.github.io/post/image-processing-engineering/</link>
       <pubDate>Sat, 16 Apr 2016 13:56:05 JST</pubDate>
       
@@ -28,7 +37,7 @@
     </item>
     
     <item>
-      <title>Information control engineering</title>
+      <title>Information Control Engineering</title>
       <link>http://tommykw.github.io/post/information-control-engineering/</link>
       <pubDate>Sat, 16 Apr 2016 13:43:06 JST</pubDate>
       
@@ -339,27 +348,6 @@ Kotlin plugin for IDEA comes with a bytecode view tool.&lt;/p&gt;
       <description>&lt;p&gt;1.Connect to Android terminal
 2.adb shell pm list packages -f | grep $packagename
 3.apk pull $packagename&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Every day UI Automator</title>
-      <link>http://tommykw.github.io/post/first/</link>
-      <pubDate>Fri, 20 Nov 2015 22:25:05 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/first/</guid>
-      <description>&lt;p&gt;UI Automator is UI testing framework on Android. suitable for cross-app functional UI testing across system and installed apps.
-Attempt to search new application design with UI Automator every day!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Usage
-&lt;code&gt;
-Android Studio 
-Tools 
-Android 
-Android Device Monitor 
-&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
