@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://tommykw.github.io/</loc>
-    <lastmod>2016-04-19T22:58:20+09:00</lastmod>
+    <lastmod>2016-04-20T08:27:01+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tommykw.github.io/post/java-synchronized/</loc>
+    <lastmod>2016-04-20T08:27:01+09:00</lastmod>
   </url>
   
   <url>

@@ -7,7 +7,16 @@
     <language>en-us</language>
     
     
-    <updated>Tue, 19 Apr 2016 22:58:20 JST</updated>
+    <updated>Wed, 20 Apr 2016 08:27:01 JST</updated>
+    
+    <item>
+      <title>java synchronized</title>
+      <link>http://tommykw.github.io/post/java-synchronized/</link>
+      <pubDate>Wed, 20 Apr 2016 08:27:01 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/java-synchronized/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Kotlin any none all</title>
@@ -58,7 +67,7 @@ false
     </item>
     
     <item>
-      <title>GC Engineering</title>
+      <title>Computer Graphics Engineering</title>
       <link>http://tommykw.github.io/post/gc-engineering/</link>
       <pubDate>Sat, 16 Apr 2016 13:56:19 JST</pubDate>
       
@@ -375,18 +384,6 @@ Kotlin plugin for IDEA comes with a bytecode view tool.&lt;/p&gt;
 &lt;li&gt;Template method&lt;/li&gt;
 &lt;li&gt;Visitor&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Get the app apk from Android terminal</title>
-      <link>http://tommykw.github.io/post/second/</link>
-      <pubDate>Fri, 20 Nov 2015 22:26:00 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/second/</guid>
-      <description>&lt;p&gt;1.Connect to Android terminal
-2.adb shell pm list packages -f | grep $packagename
-3.apk pull $packagename&lt;/p&gt;
 </description>
     </item>
     
