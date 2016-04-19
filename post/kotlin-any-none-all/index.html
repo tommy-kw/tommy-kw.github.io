@@ -93,7 +93,41 @@
         <div class="post">
           <h1>Kotlin any none all</h1>
           <span class="post-date">Tue, Apr 19, 2016</span>
-          
+          <p>In this artile describes the colletion function of the stream api of Kotlin.</p>
+
+<ul>
+<li>any</li>
+<li>Or also applies to conditions in one</li>
+</ul>
+
+<pre><code>&gt;&gt;&gt; listOf(1,2,3,4,5).any { it &gt; 4 }
+true
+&gt;&gt;&gt; listOf(1,2,3,4,5).any { it &gt; 5 }
+false
+</code></pre>
+
+<ul>
+<li>none</li>
+<li>It dose not apply to the conditions</li>
+</ul>
+
+<pre><code>&gt;&gt;&gt; listOf(1,2,3,4,5).none { it &gt; 6 }
+true
+&gt;&gt;&gt; listOf(1,2,3,4,5).none { it &gt; 4 }
+false
+</code></pre>
+
+<ul>
+<li>all</li>
+<li>It applies to all conditions</li>
+</ul>
+
+<pre><code>&gt;&gt;&gt; listOf(1,2,3,4,5).all { it &gt; 0 }
+true
+&gt;&gt;&gt; listOf(1,2,3,4,5).all { it &gt; 4 }
+false
+</code></pre>
+
         </div>
         <div class="sharing">
 <a href="https://twitter.com/intent/tweet?status=Kotlin%20any%20none%20all-http%3a%2f%2ftommykw.github.io%2fpost%2fkotlin-any-none-all%2f" target="_blank" title="Follow me on Twitter" class="twitter">

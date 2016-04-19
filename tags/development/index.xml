@@ -15,7 +15,41 @@
       <pubDate>Tue, 19 Apr 2016 22:58:20 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/kotlin-any-none-all/</guid>
-      <description></description>
+      <description>&lt;p&gt;In this artile describes the colletion function of the stream api of Kotlin.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;any&lt;/li&gt;
+&lt;li&gt;Or also applies to conditions in one&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).any { it &amp;gt; 4 }
+true
+&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).any { it &amp;gt; 5 }
+false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;none&lt;/li&gt;
+&lt;li&gt;It dose not apply to the conditions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).none { it &amp;gt; 6 }
+true
+&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).none { it &amp;gt; 4 }
+false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;all&lt;/li&gt;
+&lt;li&gt;It applies to all conditions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).all { it &amp;gt; 0 }
+true
+&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).all { it &amp;gt; 4 }
+false
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
