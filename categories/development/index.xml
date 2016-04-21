@@ -7,7 +7,16 @@
     <language>en-us</language>
     
     
-    <updated>Wed, 20 Apr 2016 08:27:01 JST</updated>
+    <updated>Thu, 21 Apr 2016 16:53:15 JST</updated>
+    
+    <item>
+      <title>neuroscience</title>
+      <link>http://tommykw.github.io/post/neuroscience/</link>
+      <pubDate>Thu, 21 Apr 2016 16:53:15 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/neuroscience/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Java synchronized</title>
@@ -359,46 +368,6 @@ Kotlin plugin for IDEA comes with a bytecode view tool.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;data class Bar(@get:JvmName(&amp;quot;isBar&amp;quot;) val bar: Boolean)
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Software design patterns</title>
-      <link>http://tommykw.github.io/post/software-design-patterns/</link>
-      <pubDate>Tue, 15 Mar 2016 06:20:50 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/software-design-patterns/</guid>
-      <description>
-
-&lt;h1 id=&#34;design-patterns-in-android-and-java-s-core-libraries:cedcc138f48c75a986f318fd6d62e527&#34;&gt;Design Patterns in Android and Java&amp;rsquo;s core libraries&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Abstract factory&lt;/li&gt;
-&lt;li&gt;Builder&lt;/li&gt;
-&lt;li&gt;Prototype&lt;/li&gt;
-&lt;li&gt;Singleton&lt;/li&gt;
-&lt;li&gt;Adapter&lt;/li&gt;
-&lt;li&gt;Bridge&lt;/li&gt;
-&lt;li&gt;Composite&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tommykw/GoogleAPI&#34;&gt;GoogleAPI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Facade&lt;/li&gt;
-&lt;li&gt;Flyweight&lt;/li&gt;
-&lt;li&gt;Proxy&lt;/li&gt;
-&lt;li&gt;Chain of responsibility&lt;/li&gt;
-&lt;li&gt;Command&lt;/li&gt;
-&lt;li&gt;Interpreter&lt;/li&gt;
-&lt;li&gt;Iterator&lt;/li&gt;
-&lt;li&gt;Mediator&lt;/li&gt;
-&lt;li&gt;Memento&lt;/li&gt;
-&lt;li&gt;Observer&lt;/li&gt;
-&lt;li&gt;State&lt;/li&gt;
-&lt;li&gt;Strategy&lt;/li&gt;
-&lt;li&gt;Template method&lt;/li&gt;
-&lt;li&gt;Visitor&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
