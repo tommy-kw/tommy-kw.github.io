@@ -7,7 +7,16 @@
     <language>en-us</language>
     
     
-    <updated>Mon, 25 Apr 2016 16:20:36 JST</updated>
+    <updated>Tue, 26 Apr 2016 08:26:15 JST</updated>
+    
+    <item>
+      <title>Groovy</title>
+      <link>http://tommykw.github.io/post/groovy/</link>
+      <pubDate>Tue, 26 Apr 2016 08:26:15 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/groovy/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Kotlin associate</title>
@@ -305,35 +314,6 @@ This is referred to as the erasure type. Only the type information of the parent
 &lt;ul&gt;
 &lt;li&gt;out/in&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Extension And Infix</title>
-      <link>http://tommykw.github.io/post/extension-infix/</link>
-      <pubDate>Fri, 25 Mar 2016 15:15:29 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/extension-infix/</guid>
-      <description>&lt;p&gt;I wrote a sample of the extension and the infix in Kotlin.
-What is the infix. Infix ia a infix notation and You can use the infix notation.&lt;/p&gt;
-
-&lt;p&gt;Extension&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; fun Int.sameAge(a:Int): Boolean { return this == a }
-&amp;gt;&amp;gt;&amp;gt; 10.sameAge(10)
-true
-&amp;gt;&amp;gt;&amp;gt; 10.sameAge(12)
-false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Infix and Extension&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; infix fun Int.sameAge(a:Int): Boolean { return this == a}
-&amp;gt;&amp;gt;&amp;gt; 10 sameAge 10
-true
-&amp;gt;&amp;gt;&amp;gt; 10 sameAge 12
-false
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
