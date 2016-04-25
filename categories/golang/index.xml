@@ -10,12 +10,25 @@
     <updated>Mon, 25 Apr 2016 16:20:36 JST</updated>
     
     <item>
-      <title>kotlin associate</title>
+      <title>Kotlin associate</title>
       <link>http://tommykw.github.io/post/kotlin-associate/</link>
       <pubDate>Mon, 25 Apr 2016 16:20:36 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/kotlin-associate/</guid>
-      <description></description>
+      <description>&lt;p&gt;According to the kotlin document, you can see that you have to
+implement that return Map.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;inline fun &amp;lt;T, K, V&amp;gt; Sequence&amp;lt;T&amp;gt;.associate(
+    transform: (T) -&amp;gt; Pair&amp;lt;K, V&amp;gt;
+): Map&amp;lt;K, V&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It can be used as follows.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).associate { it to it * 2}
+{1=2, 2=4, 3=6, 4=8, 5=10}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
