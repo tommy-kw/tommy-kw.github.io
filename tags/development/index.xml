@@ -7,7 +7,16 @@
     <language>en-us</language>
     
     
-    <updated>Tue, 26 Apr 2016 08:26:15 JST</updated>
+    <updated>Sat, 30 Apr 2016 18:19:22 JST</updated>
+    
+    <item>
+      <title>splash screen</title>
+      <link>http://tommykw.github.io/post/splash-screen/</link>
+      <pubDate>Sat, 30 Apr 2016 18:19:22 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/splash-screen/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Groovy</title>
@@ -246,75 +255,6 @@ $ brew install haskell-stack
 &lt;pre&gt;&lt;code&gt;$ stack exec hello-world-exe
 SomeFunc
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Generic Programming</title>
-      <link>http://tommykw.github.io/post/generic_programming/</link>
-      <pubDate>Sat, 26 Mar 2016 20:02:56 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/generic_programming/</guid>
-      <description>
-
-&lt;p&gt;Generic Programming is a computer programming method that does not depend on the data format.&lt;/p&gt;
-
-&lt;h1 id=&#34;overview:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Overview&lt;/h1&gt;
-
-&lt;p&gt;Generic programming regardless of the fact that either pass or to instantiate the code in the data type,
-or the data type as a parameter. You can use the same source code.
-This programming is a very powerful, dynamic, highly parameterized software is difficult to understand
-than more static software.&lt;/p&gt;
-
-&lt;h1 id=&#34;such-as:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Such as&lt;/h1&gt;
-
-&lt;h2 id=&#34;java:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Java&lt;/h2&gt;
-
-&lt;p&gt;Generics has been added in JDK1.5. Generics of Java code to produce only one of the compiled version of the generic class.
-Generics Java class can use only the object type as the type parameter.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;List&amp;lt;Integer&amp;gt; // correct
-List&amp;lt;int&amp;gt; // incorrect
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Generics is to check the correctness of the type at compile time.
-Generic type information is removed through a process referred to as a type deletion.
-This is referred to as the erasure type. Only the type information of the parent class is held.&lt;/p&gt;
-
-&lt;p&gt;There are several grammar.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bounded type parameters&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;class Dog&amp;lt;E extends Animal&amp;gt; {}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Multiple bounds&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;class Foo&amp;lt;E extends A &amp;amp; B &amp;amp; C&amp;gt; {}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bounded wildcard&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;class Foo(List&amp;lt;? extends Number&amp;gt; list) {}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;haskell:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Haskell&lt;/h2&gt;
-
-&lt;p&gt;Haskell parameterized type, parametric polymorphism, there is a type class.&lt;/p&gt;
-
-&lt;h2 id=&#34;kotlin:d74cb76d365c0efc9271214cbdaf3963&#34;&gt;Kotlin&lt;/h2&gt;
-
-&lt;p&gt;It is basically the same syntax as Java&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;out/in&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
