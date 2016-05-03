@@ -10,7 +10,7 @@
     <updated>Tue, 03 May 2016 12:57:48 JST</updated>
     
     <item>
-      <title>retrieve UserAgent programatically</title>
+      <title>Retrieve UserAgent programatically</title>
       <link>http://tommykw.github.io/post/retrieve-ua-programatically/</link>
       <pubDate>Tue, 03 May 2016 12:57:48 JST</pubDate>
       
@@ -49,8 +49,9 @@ Method of acquiring the UserAgent from the API Level 17 must be noted the change
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Also See
-&lt;a href=&#34;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&#34;&gt;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Also See&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&#34;&gt;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
