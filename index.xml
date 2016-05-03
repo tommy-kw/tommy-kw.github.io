@@ -7,7 +7,34 @@
     <language>en-us</language>
     
     
-    <updated>Tue, 03 May 2016 12:57:48 JST</updated>
+    <updated>Wed, 04 May 2016 07:53:25 JST</updated>
+    
+    <item>
+      <title>Android animation</title>
+      <link>http://tommykw.github.io/post/android-animation/</link>
+      <pubDate>Wed, 04 May 2016 07:53:25 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/android-animation/</guid>
+      <description>&lt;p&gt;Type of animation can be roughly classified into tow tyeps.
+Tween animation(Animation) and Frame animation(AnimationDrawable).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Tween Animation&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Type of changing one image to the continuous&lt;/li&gt;
+&lt;li&gt;moving, fade, rotation, scaling, and changing a combination thereof&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Frame Animation&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Type displayed side-by-side image in order to animation&lt;/li&gt;
+&lt;li&gt;To prepare an image to be displayed in the order in advance. It is displayed as a flip book&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Retrieve UserAgent programatically</title>
@@ -240,16 +267,6 @@ to control using mainly mathematics.&lt;/p&gt;
       <description>&lt;p&gt;This article describes the multidex in Android.
 dex file that exist in th package of the apk. that of the Dalvik Executable.
 Generated is converted from a class file.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Monads tutorial</title>
-      <link>http://tommykw.github.io/post/monads-tutorial/</link>
-      <pubDate>Tue, 12 Apr 2016 15:34:28 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/monads-tutorial/</guid>
-      <description>&lt;p&gt;In this article I check that how to use Monads.&lt;/p&gt;
 </description>
     </item>
     
