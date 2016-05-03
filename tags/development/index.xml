@@ -7,7 +7,52 @@
     <language>en-us</language>
     
     
-    <updated>Sat, 30 Apr 2016 18:19:22 JST</updated>
+    <updated>Tue, 03 May 2016 12:57:48 JST</updated>
+    
+    <item>
+      <title>retrieve UserAgent programatically</title>
+      <link>http://tommykw.github.io/post/retrieve-ua-programatically/</link>
+      <pubDate>Tue, 03 May 2016 12:57:48 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/retrieve-ua-programatically/</guid>
+      <description>&lt;p&gt;In the android app, it describes how to obtain the general UserAgent.
+Method of acquiring the UserAgent from the API Level 17 must be noted the changes.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class UserAgentGetter {
+    // You may uncomment next line if using Android Annotations library, otherwise just be sure to run it in on the UI thread
+    // @UiThread 
+    public static String getDefaultUserAgentString(Context context) {
+        if (Build.VERSION.SDK_INT &amp;gt;= 17) {
+            return NewApiWrapper.getDefaultUserAgent(context);
+        }
+    
+        try {
+            Constructor&amp;lt;WebSettings&amp;gt; constructor = WebSettings.class.getDeclaredConstructor(Context.class, WebView.class);
+            constructor.setAccessible(true);
+            try {
+                WebSettings settings = constructor.newInstance(context, null);
+                return settings.getUserAgentString();
+            } finally {
+                constructor.setAccessible(false);
+            }
+        } catch (Exception e) {
+            return new WebView(context).getSettings().getUserAgentString();
+        }
+    }
+    
+    @TargetApi(17)
+    static class NewApiWrapper {
+        static String getDefaultUserAgent(Context context) {
+            return WebSettings.getDefaultUserAgent(context);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Also See
+&lt;a href=&#34;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&#34;&gt;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Splash screen</title>
@@ -204,57 +249,6 @@ Generated is converted from a class file.&lt;/p&gt;
       
       <guid>http://tommykw.github.io/post/monads-tutorial/</guid>
       <description>&lt;p&gt;In this article I check that how to use Monads.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Stack hello world</title>
-      <link>http://tommykw.github.io/post/stack-hello-world/</link>
-      <pubDate>Wed, 06 Apr 2016 08:08:07 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/stack-hello-world/</guid>
-      <description>
-
-&lt;p&gt;Stack is famous for Haskell package manager.
-As a web developer I am used to clear tutorial that I can understand and learn.
-Let&amp;rsquo;s make a sample app.&lt;/p&gt;
-
-&lt;h2 id=&#34;installing-stack:89ac81d93784c829817004930eb05e8f&#34;&gt;Installing Stack&lt;/h2&gt;
-
-&lt;p&gt;Install on OSX through homebrew&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ brew update
-$ brew install haskell-stack
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;creating-a-new-app:89ac81d93784c829817004930eb05e8f&#34;&gt;Creating a new app&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;$ stack new hello-world
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Stack has some templates you can use your app.&lt;/p&gt;
-
-&lt;h2 id=&#34;installing-ghc:89ac81d93784c829817004930eb05e8f&#34;&gt;Installing GHC&lt;/h2&gt;
-
-&lt;p&gt;Run this in your app.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ stack setup
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;building-an-executable:89ac81d93784c829817004930eb05e8f&#34;&gt;Building an Executable&lt;/h2&gt;
-
-&lt;p&gt;You can build with stack build&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ stack build
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;run-the-app:89ac81d93784c829817004930eb05e8f&#34;&gt;Run the app&lt;/h2&gt;
-
-&lt;p&gt;Runt the app. This is cool.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ stack exec hello-world-exe
-SomeFunc
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
