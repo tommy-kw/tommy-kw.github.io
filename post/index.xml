@@ -7,7 +7,16 @@
     <language>en-us</language>
     
     
-    <updated>Wed, 04 May 2016 07:53:25 JST</updated>
+    <updated>Wed, 04 May 2016 16:46:30 JST</updated>
+    
+    <item>
+      <title>Breakpoint</title>
+      <link>http://tommykw.github.io/post/breakpoint/</link>
+      <pubDate>Wed, 04 May 2016 16:46:30 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/breakpoint/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Android animation</title>
@@ -255,18 +264,6 @@ to control using mainly mathematics.&lt;/p&gt;
 &lt;h2 id=&#34;post-modern-control-theory:e9bfbf0cf692edfd5ca404361a329604&#34;&gt;Post modern control theory&lt;/h2&gt;
 
 &lt;h2 id=&#34;intelligent-control:e9bfbf0cf692edfd5ca404361a329604&#34;&gt;Intelligent Control&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Multidex</title>
-      <link>http://tommykw.github.io/post/multidex/</link>
-      <pubDate>Fri, 15 Apr 2016 21:23:09 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/multidex/</guid>
-      <description>&lt;p&gt;This article describes the multidex in Android.
-dex file that exist in th package of the apk. that of the Dalvik Executable.
-Generated is converted from a class file.&lt;/p&gt;
 </description>
     </item>
     
