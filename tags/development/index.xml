@@ -7,7 +7,24 @@
     <language>en-us</language>
     
     
-    <updated>Wed, 04 May 2016 16:46:30 JST</updated>
+    <updated>Sun, 08 May 2016 01:27:10 JST</updated>
+    
+    <item>
+      <title>FlexboxLayout</title>
+      <link>http://tommykw.github.io/post/FlexboxLayout/</link>
+      <pubDate>Sun, 08 May 2016 01:27:10 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/FlexboxLayout/</guid>
+      <description>&lt;p&gt;FlexboxLayout is a library project which brings the similar Capabilities of CSS Flexible Box Layout Module to Android.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;See also&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/google/flexbox-layout&#34;&gt;https://github.com/google/flexbox-layout&lt;/a&gt;
+&lt;a href=&#34;https://www.w3.org/TR/css-flexbox-1/&#34;&gt;https://www.w3.org/TR/css-flexbox-1/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Breakpoint</title>
@@ -241,30 +258,6 @@ false
       
       <guid>http://tommykw.github.io/post/image-processing-engineering/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Information Control Engineering</title>
-      <link>http://tommykw.github.io/post/information-control-engineering/</link>
-      <pubDate>Sat, 16 Apr 2016 13:43:06 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/information-control-engineering/</guid>
-      <description>
-
-&lt;p&gt;In a system having an input and an output, a method of the freely
-control the output.&lt;/p&gt;
-
-&lt;p&gt;Control theory intented for mathematical model is the theory related
-to control using mainly mathematics.&lt;/p&gt;
-
-&lt;h2 id=&#34;classical-control-theory:e9bfbf0cf692edfd5ca404361a329604&#34;&gt;Classical control theory&lt;/h2&gt;
-
-&lt;h2 id=&#34;modern-control-theory:e9bfbf0cf692edfd5ca404361a329604&#34;&gt;Modern control theory&lt;/h2&gt;
-
-&lt;h2 id=&#34;post-modern-control-theory:e9bfbf0cf692edfd5ca404361a329604&#34;&gt;Post modern control theory&lt;/h2&gt;
-
-&lt;h2 id=&#34;intelligent-control:e9bfbf0cf692edfd5ca404361a329604&#34;&gt;Intelligent Control&lt;/h2&gt;
-</description>
     </item>
     
   </channel>
