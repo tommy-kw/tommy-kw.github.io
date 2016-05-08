@@ -7,7 +7,18 @@
     <language>en-us</language>
     
     
-    <updated>Sun, 08 May 2016 01:27:10 JST</updated>
+    <updated>Sun, 08 May 2016 11:24:32 JST</updated>
+    
+    <item>
+      <title>Applet</title>
+      <link>http://tommykw.github.io/post/applet/</link>
+      <pubDate>Sun, 08 May 2016 11:24:32 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/applet/</guid>
+      <description>&lt;p&gt;Java Applet is a program that can run on the Web browser or applet viewer.
+Java Application. on the JavaVM, is a program that works alone.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>FlexboxLayout</title>
@@ -248,15 +259,6 @@ false
       <pubDate>Sat, 16 Apr 2016 13:56:19 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/gc-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Image Processing Engineering</title>
-      <link>http://tommykw.github.io/post/image-processing-engineering/</link>
-      <pubDate>Sat, 16 Apr 2016 13:56:05 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/image-processing-engineering/</guid>
       <description></description>
     </item>
     
