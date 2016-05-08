@@ -7,7 +7,23 @@
     <language>en-us</language>
     
     
-    <updated>Sun, 08 May 2016 11:24:32 JST</updated>
+    <updated>Sun, 08 May 2016 14:11:37 JST</updated>
+    
+    <item>
+      <title>What is the different singleOrNull and find</title>
+      <link>http://tommykw.github.io/post/what-is-the-different-singleOrNull-find/</link>
+      <pubDate>Sun, 08 May 2016 14:11:37 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/what-is-the-different-singleOrNull-find/</guid>
+      <description>&lt;p&gt;Although I believe that singleOrNull and find proviedes the same function was different.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt; listOf(1,2,3).singleOrNull { it &amp;gt; 0 }
+null
+&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3).find { it &amp;gt; 0 }
+1
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Applet</title>
@@ -251,15 +267,6 @@ true
 false
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Computer Graphics Engineering</title>
-      <link>http://tommykw.github.io/post/gc-engineering/</link>
-      <pubDate>Sat, 16 Apr 2016 13:56:19 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/gc-engineering/</guid>
-      <description></description>
     </item>
     
   </channel>
