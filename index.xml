@@ -7,7 +7,16 @@
     <language>en-us</language>
     
     
-    <updated>Sun, 08 May 2016 14:11:37 JST</updated>
+    <updated>Tue, 10 May 2016 08:50:34 JST</updated>
+    
+    <item>
+      <title>Deployment java app</title>
+      <link>http://tommykw.github.io/post/deployment-java-app/</link>
+      <pubDate>Tue, 10 May 2016 08:50:34 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/deployment-java-app/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>What is the different singleOrNull and find</title>
@@ -219,54 +228,6 @@ implement that return Map.&lt;/p&gt;
       
       <guid>http://tommykw.github.io/post/java-synchronized/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Kotlin any none all</title>
-      <link>http://tommykw.github.io/post/kotlin-any-none-all/</link>
-      <pubDate>Tue, 19 Apr 2016 22:58:20 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/kotlin-any-none-all/</guid>
-      <description>
-
-&lt;p&gt;In this artile describes the colletion function of the stream api of Kotlin.&lt;/p&gt;
-
-&lt;h2 id=&#34;any:5d579fe2b66ec26434ad62ec9e0f74f8&#34;&gt;any&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Or also applies to conditions in one&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).any { it &amp;gt; 4 }
-true
-&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).any { it &amp;gt; 5 }
-false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;none:5d579fe2b66ec26434ad62ec9e0f74f8&#34;&gt;none&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It dose not apply to the conditions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).none { it &amp;gt; 6 }
-true
-&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).none { it &amp;gt; 4 }
-false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;all:5d579fe2b66ec26434ad62ec9e0f74f8&#34;&gt;all&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It applies to all conditions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).all { it &amp;gt; 0 }
-true
-&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3,4,5).all { it &amp;gt; 4 }
-false
-&lt;/code&gt;&lt;/pre&gt;
-</description>
     </item>
     
   </channel>
