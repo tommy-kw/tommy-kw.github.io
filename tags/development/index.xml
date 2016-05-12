@@ -7,7 +7,52 @@
     <language>en-us</language>
     
     
-    <updated>Tue, 10 May 2016 08:50:34 JST</updated>
+    <updated>Fri, 13 May 2016 05:37:46 JST</updated>
+    
+    <item>
+      <title>Lateinit property before it has been initialized</title>
+      <link>http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/</link>
+      <pubDate>Fri, 13 May 2016 05:37:46 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/</guid>
+      <description>&lt;p&gt;The follwing exceptions and are using the lateinit occurred.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class UdonMaker {
+    lateinit var callback:Callback
+    fun onCreate(callback: Callback) {
+        this.callback = callback
+        ...
+    }
+
+    fun onResult(result:Result) {
+        if (result.code == &amp;quot;OK&amp;quot;) {
+            callback.onSucess() // lateinit property before it has been initialized
+        } else {
+            callback.onFail()
+        }
+    }
+
+    interface callback {
+        onSuccess()
+        onFail()
+    }
+}
+
+fun onCreate() {
+    UdonMaker().onCreate(object : Callback {
+        override fun onSucess() {}
+        override fun onFail() {}
+    })
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Accessing a lateinit property before it has been initialized throws a special exception that
+clearly identifies the property being accessed and the fact that it hasn&amp;rsquo;t been initialized&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var callback:Callback? = null
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Deployment java app</title>
@@ -219,15 +264,6 @@ implement that return Map.&lt;/p&gt;
       <pubDate>Thu, 21 Apr 2016 16:53:15 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/neuroscience/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java synchronized</title>
-      <link>http://tommykw.github.io/post/java-synchronized/</link>
-      <pubDate>Wed, 20 Apr 2016 08:27:01 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/java-synchronized/</guid>
       <description></description>
     </item>
     

@@ -98,6 +98,23 @@
                             
                                 <article class="post">
 <header>
+<h2><a href="http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/">Lateinit property before it has been initialized </a> </h2>
+<div class="post-meta">Fri, May 13, 2016 - Read in 1 Min </div>
+</header>
+<div class="summary">
+    The follwing exceptions and are using the lateinit occurred. class UdonMaker { lateinit var callback:Callback fun onCreate(callback: Callback) { this.callback = callback ... } fun onResult(result:Result) { if (result.code == &quot;OK&quot;) { callback.onSucess() // lateinit property before it has been initialized } else { callback.onFail() } } interface callback { onSuccess() onFail() } } fun onCreate() { UdonMaker().onCreate(object : Callback { override fun onSucess() {} override fun onFail() {} }) } Accessing a lateinit property before it has been initialized throws a special exception that clearly identifies the property being accessed and the fact that it hasn&rsquo;t been initialized var callback:Callback?
+</div>
+<footer>
+<a href='http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/'><nobr>Read more →</nobr></a>
+</footer>
+</article>
+
+
+                            
+                        
+                            
+                                <article class="post">
+<header>
 <h2><a href="http://tommykw.github.io/post/deployment-java-app/">Deployment java app </a> </h2>
 <div class="post-meta">Tue, May 10, 2016 - Read in 1 Min </div>
 </header>
@@ -242,23 +259,6 @@
 </div>
 <footer>
 <a href='http://tommykw.github.io/post/groovy/'><nobr>Read more →</nobr></a>
-</footer>
-</article>
-
-
-                            
-                        
-                            
-                                <article class="post">
-<header>
-<h2><a href="http://tommykw.github.io/post/kotlin-associate/">Kotlin associate </a> </h2>
-<div class="post-meta">Mon, Apr 25, 2016 - Read in 1 Min </div>
-</header>
-<div class="summary">
-    According to the kotlin document, you can see that you have to implement that return Map. inline fun &lt;T, K, V&gt; Sequence&lt;T&gt;.associate( transform: (T) -&gt; Pair&lt;K, V&gt; ): Map&lt;K, V&gt; It can be used as follows. &gt;&gt;&gt; listOf(1,2,3,4,5).associate { it to it * 2} {1=2, 2=4, 3=6, 4=8, 5=10}
-</div>
-<footer>
-<a href='http://tommykw.github.io/post/kotlin-associate/'><nobr>Read more →</nobr></a>
 </footer>
 </article>
 

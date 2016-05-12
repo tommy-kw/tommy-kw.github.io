@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://tommykw.github.io/</loc>
-    <lastmod>2016-05-10T08:50:34+09:00</lastmod>
+    <lastmod>2016-05-13T05:37:46+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/</loc>
+    <lastmod>2016-05-13T05:37:46+09:00</lastmod>
   </url>
   
   <url>
