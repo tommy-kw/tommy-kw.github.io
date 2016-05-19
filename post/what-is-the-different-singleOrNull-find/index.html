@@ -101,6 +101,14 @@ null
 1
 </code></pre>
 
+<p>The following is the same result</p>
+
+<pre><code>&gt;&gt;&gt; listOf(1,2,3).singleOrNull { it == 1 }
+1
+&gt;&gt;&gt; listOf(1,2,3).find { it == 1 }
+1
+</code></pre>
+
         </div>
         <div class="sharing">
 <a href="https://twitter.com/intent/tweet?status=What%20is%20the%20different%20singleOrNull%20and%20find-http%3a%2f%2ftommykw.github.io%2fpost%2fwhat-is-the-different-singleOrNull-find%2f" target="_blank" title="Follow me on Twitter" class="twitter">
