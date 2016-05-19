@@ -7,7 +7,19 @@
     <language>en-us</language>
     
     
-    <updated>Mon, 16 May 2016 14:28:24 JST</updated>
+    <updated>Thu, 19 May 2016 13:45:57 JST</updated>
+    
+    <item>
+      <title>Rust</title>
+      <link>http://tommykw.github.io/post/rust/</link>
+      <pubDate>Thu, 19 May 2016 13:45:57 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/rust/</guid>
+      <description>&lt;p&gt;Rust is a programming language of parallel and multi-paradim.
+Has been developed by the Mozilla. Functional programming, parallel actor model,
+procedural programming, is aimed at practical language that supports object-oriented programming.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>what is the differennt any nothing unit</title>
@@ -255,15 +267,6 @@ implement that return Map.&lt;/p&gt;
       <pubDate>Mon, 25 Apr 2016 16:20:04 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/jit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>What is the different concatMap and flatMap</title>
-      <link>http://tommykw.github.io/post/what-is-the-different-concatMap-flatMap/</link>
-      <pubDate>Fri, 22 Apr 2016 13:53:18 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/what-is-the-different-concatMap-flatMap/</guid>
       <description></description>
     </item>
     
