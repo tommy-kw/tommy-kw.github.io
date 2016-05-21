@@ -7,7 +7,22 @@
     <language>en-us</language>
     
     
-    <updated>Thu, 19 May 2016 13:45:57 JST</updated>
+    <updated>Sat, 21 May 2016 14:22:16 JST</updated>
+    
+    <item>
+      <title>Start first medical code project</title>
+      <link>http://tommykw.github.io/post/start-first-medical-code-project/</link>
+      <pubDate>Sat, 21 May 2016 14:22:16 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/start-first-medical-code-project/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve created a repository for the development of the sensor or application detects a concussion.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/MedicalCode/ConcussionSensor&#34;&gt;https://github.com/MedicalCode/ConcussionSensor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is still missing from the story at all what if the proceeds with the good,
+but make up somehow, I would like to contribute to the medical industry.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Rust</title>
@@ -266,15 +281,6 @@ implement that return Map.&lt;/p&gt;
       <pubDate>Mon, 25 Apr 2016 16:20:08 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/aot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jit</title>
-      <link>http://tommykw.github.io/post/jit/</link>
-      <pubDate>Mon, 25 Apr 2016 16:20:04 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/jit/</guid>
       <description></description>
     </item>
     
