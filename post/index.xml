@@ -7,7 +7,16 @@
     <language>en-us</language>
     
     
-    <updated>Sat, 21 May 2016 14:22:16 JST</updated>
+    <updated>Tue, 24 May 2016 08:04:09 JST</updated>
+    
+    <item>
+      <title>item touch helper</title>
+      <link>http://tommykw.github.io/post/item-touch-helper/</link>
+      <pubDate>Tue, 24 May 2016 08:04:09 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/item-touch-helper/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Start first medical code project</title>
@@ -273,15 +282,6 @@ implement that return Map.&lt;/p&gt;
 {1=2, 2=4, 3=6, 4=8, 5=10}
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>aot</title>
-      <link>http://tommykw.github.io/post/aot/</link>
-      <pubDate>Mon, 25 Apr 2016 16:20:08 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/aot/</guid>
-      <description></description>
     </item>
     
   </channel>
