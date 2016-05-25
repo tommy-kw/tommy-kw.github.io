@@ -7,7 +7,16 @@
     <language>en-us</language>
     
     
-    <updated>Tue, 24 May 2016 08:05:15 JST</updated>
+    <updated>Thu, 26 May 2016 02:12:08 JST</updated>
+    
+    <item>
+      <title>awareness api</title>
+      <link>http://tommykw.github.io/post/awareness-api/</link>
+      <pubDate>Thu, 26 May 2016 02:12:08 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/awareness-api/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>data interchange format</title>
@@ -259,16 +268,6 @@ Method of acquiring the UserAgent from the API Level 17 must be noted the change
       
       <guid>http://tommykw.github.io/post/splash-screen/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Groovy</title>
-      <link>http://tommykw.github.io/post/groovy/</link>
-      <pubDate>Tue, 26 Apr 2016 08:26:15 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/groovy/</guid>
-      <description>&lt;p&gt;It is a dynamic programming language that runs on the JVM.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
