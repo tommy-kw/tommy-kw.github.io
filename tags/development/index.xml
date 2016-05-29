@@ -19,12 +19,18 @@
     </item>
     
     <item>
-      <title>data interchange format</title>
+      <title>Data interchange format</title>
       <link>http://tommykw.github.io/post/data-interchange-format/</link>
       <pubDate>Tue, 24 May 2016 08:05:15 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/data-interchange-format/</guid>
-      <description></description>
+      <description>&lt;p&gt;Data interchange format are as follows:
+- &lt;a href=&#34;https://github.com/google/protobuf&#34;&gt;Protocol Buffers&lt;/a&gt;
+ - Protocol Buffers is Google&amp;rsquo;s data interchange format
+- [Serializable]
+ - It called the serialization or serialize it to write the object to the output stream
+- &lt;a href=&#34;https://developer.android.com/reference/android/os/Parcelable.html&#34;&gt;Parcelable&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
