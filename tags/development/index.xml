@@ -24,12 +24,21 @@
       <pubDate>Tue, 24 May 2016 08:05:15 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/data-interchange-format/</guid>
-      <description>&lt;p&gt;Data interchange format are as follows:
-- &lt;a href=&#34;https://github.com/google/protobuf&#34;&gt;Protocol Buffers&lt;/a&gt;
- - Protocol Buffers is Google&amp;rsquo;s data interchange format
-- [Serializable]
- - It called the serialization or serialize it to write the object to the output stream
-- &lt;a href=&#34;https://developer.android.com/reference/android/os/Parcelable.html&#34;&gt;Parcelable&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Data interchange format is as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/protobuf&#34;&gt;Protocol Buffers&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Protocol Buffers is Google&amp;rsquo;s data interchange format&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;hoge&#34;&gt;Serializable&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It called the serialization or serialize it to write the object to the output stream&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.android.com/reference/android/os/Parcelable.html&#34;&gt;Parcelable&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
