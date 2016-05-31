@@ -7,117 +7,317 @@
     <language>en-us</language>
     
     
-    <updated>Fri, 18 Mar 2016 07:58:14 JST</updated>
+    <updated>Wed, 01 Jun 2016 00:27:32 JST</updated>
     
     <item>
-      <title>Kotlin bytecode</title>
-      <link>http://tommykw.github.io/post/kotlin-bytecode/</link>
-      <pubDate>Fri, 18 Mar 2016 07:58:14 JST</pubDate>
+      <title>Data Binding</title>
+      <link>http://tommykw.github.io/post/databinding/</link>
+      <pubDate>Wed, 01 Jun 2016 00:27:32 JST</pubDate>
       
-      <guid>http://tommykw.github.io/post/kotlin-bytecode/</guid>
-      <description>&lt;p&gt;You are able to view the compoiled bytecode.&lt;br /&gt;
-You can learn more about hot it works under the covers.
-Kotlin plugin for IDEA comes with a bytecode view tool.&lt;/p&gt;
+      <guid>http://tommykw.github.io/post/databinding/</guid>
+      <description>&lt;p&gt;Data Binding is the technology to combine static or dynamic data source UI such as XML.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Tools&lt;/li&gt;
-&lt;li&gt;Kotlin&lt;/li&gt;
-&lt;li&gt;Show Kotlin Bytecode&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Thre is a need to set the layout tag as follows&lt;/p&gt;
 
-&lt;p&gt;It is killer feature.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;layout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&amp;gt;
+    ...
+&amp;lt;/layout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please be sure to define the xmlns attribute.
+Data binding can be used, but because you can not be an event of onClick calls.
+Not called is onSampleClick method in the case of the following.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;layout&amp;gt;
+    &amp;lt;data&amp;gt;
+       &amp;lt;variable name=&amp;quot;activity&#39; type=&amp;quot;com.activity.MainActivity&amp;quot; /&amp;gt;
+    &amp;lt;/data&amp;gt;
+    ...
+
+    &amp;lt;Button
+        onClick=&amp;quot;@{activity.onSampleClick}&amp;quot; /&amp;gt; // not work
+&amp;lt;/layout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please be sure to define the xmnls attribute to the layout.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;layout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&amp;gt;
+    &amp;lt;data&amp;gt;
+       &amp;lt;variable name=&amp;quot;activity&#39; type=&amp;quot;com.activity.MainActivity&amp;quot; /&amp;gt;
+    &amp;lt;/data&amp;gt;
+    ...
+
+    &amp;lt;Button
+        onClick=&amp;quot;@{activity.onSampleClick}&amp;quot; /&amp;gt; // work
+&amp;lt;/layout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
     <item>
-      <title>Way to get the method for java compat</title>
-      <link>http://tommykw.github.io/post/Way-to-get-the-method-for-java-compat/</link>
-      <pubDate>Wed, 16 Mar 2016 04:06:54 JST</pubDate>
+      <title>awareness api</title>
+      <link>http://tommykw.github.io/post/awareness-api/</link>
+      <pubDate>Thu, 26 May 2016 02:12:08 JST</pubDate>
       
-      <guid>http://tommykw.github.io/post/Way-to-get-the-method-for-java-compat/</guid>
-      <description>&lt;p&gt;There is a way to get the method for java compat to become boolean name or getter name&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var bar: Int = 1
-    @JvmName(&amp;quot;getBar&amp;quot;) get
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;On a data class case&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;data class Bar(@get:JvmName(&amp;quot;isBar&amp;quot;) val bar: Boolean)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>http://tommykw.github.io/post/awareness-api/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Software design patterns</title>
-      <link>http://tommykw.github.io/post/software-design-patterns/</link>
-      <pubDate>Tue, 15 Mar 2016 06:20:50 JST</pubDate>
+      <title>Data interchange format</title>
+      <link>http://tommykw.github.io/post/data-interchange-format/</link>
+      <pubDate>Tue, 24 May 2016 08:05:15 JST</pubDate>
       
-      <guid>http://tommykw.github.io/post/software-design-patterns/</guid>
-      <description>
-
-&lt;h1 id=&#34;design-patterns-in-android-and-java-s-core-libraries:cedcc138f48c75a986f318fd6d62e527&#34;&gt;Design Patterns in Android and Java&amp;rsquo;s core libraries&lt;/h1&gt;
+      <guid>http://tommykw.github.io/post/data-interchange-format/</guid>
+      <description>&lt;p&gt;Data interchange format is as follows:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Abstract factory&lt;/li&gt;
-&lt;li&gt;Builder&lt;/li&gt;
-&lt;li&gt;Prototype&lt;/li&gt;
-&lt;li&gt;Singleton&lt;/li&gt;
-&lt;li&gt;Adapter&lt;/li&gt;
-&lt;li&gt;Bridge&lt;/li&gt;
-&lt;li&gt;Composite&lt;br /&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/protobuf&#34;&gt;Protocol Buffers&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tommykw/GoogleAPI&#34;&gt;GoogleAPI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Protocol Buffers is Google&amp;rsquo;s data interchange format&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Facade&lt;/li&gt;
-&lt;li&gt;Flyweight&lt;/li&gt;
-&lt;li&gt;Proxy&lt;/li&gt;
-&lt;li&gt;Chain of responsibility&lt;/li&gt;
-&lt;li&gt;Command&lt;/li&gt;
-&lt;li&gt;Interpreter&lt;/li&gt;
-&lt;li&gt;Iterator&lt;/li&gt;
-&lt;li&gt;Mediator&lt;/li&gt;
-&lt;li&gt;Memento&lt;/li&gt;
-&lt;li&gt;Observer&lt;/li&gt;
-&lt;li&gt;State&lt;/li&gt;
-&lt;li&gt;Strategy&lt;/li&gt;
-&lt;li&gt;Template method&lt;/li&gt;
-&lt;li&gt;Visitor&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Get the app apk from Android terminal</title>
-      <link>http://tommykw.github.io/post/second/</link>
-      <pubDate>Fri, 20 Nov 2015 22:26:00 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/second/</guid>
-      <description>&lt;p&gt;1.Connect to Android terminal
-2.adb shell pm list packages -f | grep $packagename
-3.apk pull $packagename&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Every day UI Automator</title>
-      <link>http://tommykw.github.io/post/first/</link>
-      <pubDate>Fri, 20 Nov 2015 22:25:05 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/first/</guid>
-      <description>&lt;p&gt;UI Automator is UI testing framework on Android. suitable for cross-app functional UI testing across system and installed apps.
-Attempt to search new application design with UI Automator every day!&lt;/p&gt;
+&lt;li&gt;&lt;a href=&#34;hoge&#34;&gt;Serializable&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Usage
-&lt;code&gt;
-Android Studio 
-Tools 
-Android 
-Android Device Monitor 
-&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;It called the serialization or serialize it to write the object to the output stream&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.android.com/reference/android/os/Parcelable.html&#34;&gt;Parcelable&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>item touch helper</title>
+      <link>http://tommykw.github.io/post/item-touch-helper/</link>
+      <pubDate>Tue, 24 May 2016 08:04:09 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/item-touch-helper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Start first medical code project</title>
+      <link>http://tommykw.github.io/post/start-first-medical-code-project/</link>
+      <pubDate>Sat, 21 May 2016 14:22:16 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/start-first-medical-code-project/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve created a repository for the development of the sensor or application detects a concussion.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/MedicalCode/ConcussionSensor&#34;&gt;https://github.com/MedicalCode/ConcussionSensor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is still missing from the story at all what if the proceeds with the good,
+but make up somehow, I would like to contribute to the medical industry.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>http://tommykw.github.io/post/rust/</link>
+      <pubDate>Thu, 19 May 2016 13:45:57 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/rust/</guid>
+      <description>&lt;p&gt;Rust is a programming language of parallel and multi-paradim.
+Has been developed by the Mozilla. Functional programming, parallel actor model,
+procedural programming, is aimed at practical language that supports object-oriented programming.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>what is the differennt any nothing unit</title>
+      <link>http://tommykw.github.io/post/what-is-the-differennt-any-nothing-unit/</link>
+      <pubDate>Mon, 16 May 2016 14:28:24 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/what-is-the-differennt-any-nothing-unit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lateinit property before it has been initialized</title>
+      <link>http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/</link>
+      <pubDate>Fri, 13 May 2016 05:37:46 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/</guid>
+      <description>&lt;p&gt;The follwing exceptions and are using the lateinit occurred.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class UdonMaker {
+    lateinit var callback:Callback
+    fun onCreate(callback: Callback) {
+        this.callback = callback
+        ...
+    }
+
+    fun onResult(result:Result) {
+        if (result.code == &amp;quot;OK&amp;quot;) {
+            callback.onSucess() // lateinit property before it has been initialized
+        } else {
+            callback.onFail()
+        }
+    }
+
+    interface callback {
+        onSuccess()
+        onFail()
+    }
+}
+
+fun onCreate() {
+    UdonMaker().onCreate(object : Callback {
+        override fun onSucess() {}
+        override fun onFail() {}
+    })
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Accessing a lateinit property before it has been initialized throws a special exception that
+clearly identifies the property being accessed and the fact that it hasn&amp;rsquo;t been initialized&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var callback:Callback? = null
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deployment java app</title>
+      <link>http://tommykw.github.io/post/deployment-java-app/</link>
+      <pubDate>Tue, 10 May 2016 08:50:34 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/deployment-java-app/</guid>
+      <description>&lt;p&gt;To deploy the application in Tomcat, that the war file.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is the different singleOrNull and find</title>
+      <link>http://tommykw.github.io/post/what-is-the-different-singleOrNull-find/</link>
+      <pubDate>Sun, 08 May 2016 14:11:37 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/what-is-the-different-singleOrNull-find/</guid>
+      <description>&lt;p&gt;Although I believe that singleOrNull and find proviedes the same function was different.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt; listOf(1,2,3).singleOrNull { it &amp;gt; 0 }
+null
+&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3).find { it &amp;gt; 0 }
+1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The following is the same result&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3).singleOrNull { it == 1 }
+1
+&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3).find { it == 1 }
+1
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Applet</title>
+      <link>http://tommykw.github.io/post/applet/</link>
+      <pubDate>Sun, 08 May 2016 11:24:32 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/applet/</guid>
+      <description>&lt;p&gt;Java Applet is a program that can run on the Web browser or applet viewer.
+Java Application is a program that works alone. Itself will operate as an independent program.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FlexboxLayout</title>
+      <link>http://tommykw.github.io/post/FlexboxLayout/</link>
+      <pubDate>Sun, 08 May 2016 01:27:10 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/FlexboxLayout/</guid>
+      <description>&lt;p&gt;FlexboxLayout is a library project which brings the similar Capabilities of CSS Flexible Box Layout Module to Android.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;See also&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/google/flexbox-layout&#34;&gt;https://github.com/google/flexbox-layout&lt;/a&gt;
+&lt;a href=&#34;https://www.w3.org/TR/css-flexbox-1/&#34;&gt;https://www.w3.org/TR/css-flexbox-1/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Breakpoint</title>
+      <link>http://tommykw.github.io/post/breakpoint/</link>
+      <pubDate>Wed, 04 May 2016 16:46:30 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/breakpoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android animation</title>
+      <link>http://tommykw.github.io/post/android-animation/</link>
+      <pubDate>Wed, 04 May 2016 07:53:25 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/android-animation/</guid>
+      <description>&lt;p&gt;Type of animation can be roughly classified into tow tyeps.
+Tween animation(Animation) and Frame animation(AnimationDrawable).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Tween Animation&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Type of changing one image to the continuous&lt;/li&gt;
+&lt;li&gt;moving, fade, rotation, scaling, and changing a combination thereof&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Frame Animation&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Type displayed side-by-side image in order to animation&lt;/li&gt;
+&lt;li&gt;To prepare an image to be displayed in the order in advance. It is displayed as a flip book&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Retrieve UserAgent programatically</title>
+      <link>http://tommykw.github.io/post/retrieve-ua-programatically/</link>
+      <pubDate>Tue, 03 May 2016 12:57:48 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/retrieve-ua-programatically/</guid>
+      <description>&lt;p&gt;In the android app, it describes how to obtain the general UserAgent.
+Method of acquiring the UserAgent from the API Level 17 must be noted the changes.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class UserAgentGetter {
+    // You may uncomment next line if using Android Annotations library, otherwise just be sure to run it in on the UI thread
+    // @UiThread 
+    public static String getDefaultUserAgentString(Context context) {
+        if (Build.VERSION.SDK_INT &amp;gt;= 17) {
+            return NewApiWrapper.getDefaultUserAgent(context);
+        }
+    
+        try {
+            Constructor&amp;lt;WebSettings&amp;gt; constructor = WebSettings.class.getDeclaredConstructor(Context.class, WebView.class);
+            constructor.setAccessible(true);
+            try {
+                WebSettings settings = constructor.newInstance(context, null);
+                return settings.getUserAgentString();
+            } finally {
+                constructor.setAccessible(false);
+            }
+        } catch (Exception e) {
+            return new WebView(context).getSettings().getUserAgentString();
+        }
+    }
+    
+    @TargetApi(17)
+    static class NewApiWrapper {
+        static String getDefaultUserAgent(Context context) {
+            return WebSettings.getDefaultUserAgent(context);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Also See&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&#34;&gt;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
