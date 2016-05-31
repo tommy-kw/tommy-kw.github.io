@@ -7,7 +7,52 @@
     <language>en-us</language>
     
     
-    <updated>Thu, 26 May 2016 02:12:08 JST</updated>
+    <updated>Wed, 01 Jun 2016 00:27:32 JST</updated>
+    
+    <item>
+      <title>Data Binding</title>
+      <link>http://tommykw.github.io/post/databinding/</link>
+      <pubDate>Wed, 01 Jun 2016 00:27:32 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/databinding/</guid>
+      <description>&lt;p&gt;Data Binding is the technology to combine static or dynamic data source UI such as XML.&lt;/p&gt;
+
+&lt;p&gt;Thre is a need to set the layout tag as follows&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;layout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&amp;gt;
+    ...
+&amp;lt;/layout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please be sure to define the xmlns attribute.
+Data binding can be used, but because you can not be an event of onClick calls.
+Not called is onSampleClick method in the case of the following.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;layout&amp;gt;
+    &amp;lt;data&amp;gt;
+       &amp;lt;variable name=&amp;quot;activity&#39; type=&amp;quot;com.activity.MainActivity&amp;quot; /&amp;gt;
+    &amp;lt;/data&amp;gt;
+    ...
+
+    &amp;lt;Button
+        onClick=&amp;quot;@{activity.onSampleClick}&amp;quot; /&amp;gt; // not work
+&amp;lt;/layout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please be sure to define the xmnls attribute to the layout.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;layout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&amp;gt;
+    &amp;lt;data&amp;gt;
+       &amp;lt;variable name=&amp;quot;activity&#39; type=&amp;quot;com.activity.MainActivity&amp;quot; /&amp;gt;
+    &amp;lt;/data&amp;gt;
+    ...
+
+    &amp;lt;Button
+        onClick=&amp;quot;@{activity.onSampleClick}&amp;quot; /&amp;gt; // work
+&amp;lt;/layout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>awareness api</title>
@@ -274,15 +319,6 @@ Method of acquiring the UserAgent from the API Level 17 must be noted the change
 
 &lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&#34;&gt;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Splash screen</title>
-      <link>http://tommykw.github.io/post/splash-screen/</link>
-      <pubDate>Sat, 30 Apr 2016 18:19:22 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/splash-screen/</guid>
-      <description></description>
     </item>
     
   </channel>
