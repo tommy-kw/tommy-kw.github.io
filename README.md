@@ -1,5 +1,5 @@
 # tommy-kw.github.io
-This repository is my blog site
+This repository is my blog site. Hugo is very comfortable.
 
 ## Using Frameworks
-- Hugo
+- [Hugo](http://gohugo.io/)
