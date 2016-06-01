@@ -7,7 +7,23 @@
     <language>en-us</language>
     
     
-    <updated>Wed, 01 Jun 2016 00:27:32 JST</updated>
+    <updated>Wed, 01 Jun 2016 13:56:11 JST</updated>
+    
+    <item>
+      <title>Fragment IllegalStateException</title>
+      <link>http://tommykw.github.io/post/Fragment-IllegalStateException/</link>
+      <pubDate>Wed, 01 Jun 2016 13:56:11 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/Fragment-IllegalStateException/</guid>
+      <description>&lt;p&gt;Operation to FragmentManager must be in front of the Activity of the side onSaveInstanceState().
+The following error will occur if you have an operation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Can not perform this action after onSaveInstanceState()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The operation in onCreate, you need to stop the operation of Fragment in asynchronous.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Data Binding</title>
@@ -272,52 +288,6 @@ Tween animation(Animation) and Frame animation(AnimationDrawable).&lt;/p&gt;
 &lt;li&gt;To prepare an image to be displayed in the order in advance. It is displayed as a flip book&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Retrieve UserAgent programatically</title>
-      <link>http://tommykw.github.io/post/retrieve-ua-programatically/</link>
-      <pubDate>Tue, 03 May 2016 12:57:48 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/retrieve-ua-programatically/</guid>
-      <description>&lt;p&gt;In the android app, it describes how to obtain the general UserAgent.
-Method of acquiring the UserAgent from the API Level 17 must be noted the changes.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class UserAgentGetter {
-    // You may uncomment next line if using Android Annotations library, otherwise just be sure to run it in on the UI thread
-    // @UiThread 
-    public static String getDefaultUserAgentString(Context context) {
-        if (Build.VERSION.SDK_INT &amp;gt;= 17) {
-            return NewApiWrapper.getDefaultUserAgent(context);
-        }
-    
-        try {
-            Constructor&amp;lt;WebSettings&amp;gt; constructor = WebSettings.class.getDeclaredConstructor(Context.class, WebView.class);
-            constructor.setAccessible(true);
-            try {
-                WebSettings settings = constructor.newInstance(context, null);
-                return settings.getUserAgentString();
-            } finally {
-                constructor.setAccessible(false);
-            }
-        } catch (Exception e) {
-            return new WebView(context).getSettings().getUserAgentString();
-        }
-    }
-    
-    @TargetApi(17)
-    static class NewApiWrapper {
-        static String getDefaultUserAgent(Context context) {
-            return WebSettings.getDefaultUserAgent(context);
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Also See&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&#34;&gt;http://stackoverflow.com/questions/3626071/retrieve-user-agent-programatically/5261472#5261472&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

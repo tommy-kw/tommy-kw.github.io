@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://tommykw.github.io/</loc>
-    <lastmod>2016-06-01T00:27:32+09:00</lastmod>
+    <lastmod>2016-06-01T13:56:11+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tommykw.github.io/post/Fragment-IllegalStateException/</loc>
+    <lastmod>2016-06-01T13:56:11+09:00</lastmod>
   </url>
   
   <url>
