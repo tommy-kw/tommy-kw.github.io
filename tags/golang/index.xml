@@ -7,7 +7,21 @@
     <language>en-us</language>
     
     
-    <updated>Wed, 01 Jun 2016 13:56:11 JST</updated>
+    <updated>Thu, 02 Jun 2016 07:55:49 JST</updated>
+    
+    <item>
+      <title>Well said</title>
+      <link>http://tommykw.github.io/post/well-said/</link>
+      <pubDate>Thu, 02 Jun 2016 07:55:49 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/well-said/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;The will to win, the desire to succeed, the urge to reach your full potential...
+these are the keys that will unlock the door to personal excellence - Confucius
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is simple, but very difficult. But it leads to only your heights.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Fragment IllegalStateException</title>
@@ -262,33 +276,6 @@ Java Application is a program that works alone. Itself will operate as an indepe
       
       <guid>http://tommykw.github.io/post/breakpoint/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Android animation</title>
-      <link>http://tommykw.github.io/post/android-animation/</link>
-      <pubDate>Wed, 04 May 2016 07:53:25 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/android-animation/</guid>
-      <description>&lt;p&gt;Type of animation can be roughly classified into tow tyeps.
-Tween animation(Animation) and Frame animation(AnimationDrawable).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Tween Animation&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Type of changing one image to the continuous&lt;/li&gt;
-&lt;li&gt;moving, fade, rotation, scaling, and changing a combination thereof&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Frame Animation&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Type displayed side-by-side image in order to animation&lt;/li&gt;
-&lt;li&gt;To prepare an image to be displayed in the order in advance. It is displayed as a flip book&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
   </channel>
