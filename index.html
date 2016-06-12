@@ -98,6 +98,23 @@
                             
                                 <article class="post">
 <header>
+<h2><a href="http://tommykw.github.io/post/collection-array/">Collection array </a> </h2>
+<div class="post-meta">Sun, Jun 12, 2016 - Read in 1 Min </div>
+</header>
+<div class="summary">
+    There are four of tye array type in Kotlin. List ArrayList Array IntArray (In the case of Int) Kotlin List &gt;&gt;&gt; val a:List&lt;Int&gt; = listOf(1,2,3) &gt;&gt;&gt; a.add(1) error: unresolved reference: add &gt;&gt;&gt; a.javaClass class java.util.Arrays$ArrayList Kotlin ArrayList // kotlin &gt;&gt;&gt; val a:ArrayList&lt;Int&gt; = arrayListOf(1,2,3) error: unresolved reference: ArrayList val a:ArrayList&lt;Int&gt; = arrayListOf(1,2,3) &gt;&gt;&gt; val a = arrayListOf(1,2,3) &gt;&gt;&gt; a.add(1) true &gt;&gt;&gt; a.javaClass class java.util.ArrayList Not work. Because ArrayList is java.util.ArrayList
+</div>
+<footer>
+<a href='http://tommykw.github.io/post/collection-array/'><nobr>Read more →</nobr></a>
+</footer>
+</article>
+
+
+                            
+                        
+                            
+                                <article class="post">
+<header>
 <h2><a href="http://tommykw.github.io/post/well-said/">Well said </a> </h2>
 <div class="post-meta">Thu, Jun 2, 2016 - Read in 1 Min </div>
 </header>
@@ -242,23 +259,6 @@
 </div>
 <footer>
 <a href='http://tommykw.github.io/post/what-is-the-differennt-any-nothing-unit/'><nobr>Read more →</nobr></a>
-</footer>
-</article>
-
-
-                            
-                        
-                            
-                                <article class="post">
-<header>
-<h2><a href="http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/">Lateinit property before it has been initialized </a> </h2>
-<div class="post-meta">Fri, May 13, 2016 - Read in 1 Min </div>
-</header>
-<div class="summary">
-    The follwing exceptions and are using the lateinit occurred. class UdonMaker { lateinit var callback:Callback fun onCreate(callback: Callback) { this.callback = callback ... } fun onResult(result:Result) { if (result.code == &quot;OK&quot;) { callback.onSucess() // lateinit property before it has been initialized } else { callback.onFail() } } interface callback { onSuccess() onFail() } } fun onCreate() { UdonMaker().onCreate(object : Callback { override fun onSucess() {} override fun onFail() {} }) } Accessing a lateinit property before it has been initialized throws a special exception that clearly identifies the property being accessed and the fact that it hasn&rsquo;t been initialized var callback:Callback?
-</div>
-<footer>
-<a href='http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/'><nobr>Read more →</nobr></a>
 </footer>
 </article>
 

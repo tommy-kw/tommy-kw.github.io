@@ -7,7 +7,71 @@
     <language>en-us</language>
     
     
-    <updated>Thu, 02 Jun 2016 07:55:49 JST</updated>
+    <updated>Sun, 12 Jun 2016 11:21:03 JST</updated>
+    
+    <item>
+      <title>Collection array</title>
+      <link>http://tommykw.github.io/post/collection-array/</link>
+      <pubDate>Sun, 12 Jun 2016 11:21:03 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/collection-array/</guid>
+      <description>&lt;p&gt;There are four of tye array type in Kotlin.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;li&gt;ArrayList&lt;/li&gt;
+&lt;li&gt;Array&lt;/li&gt;
+&lt;li&gt;IntArray (In the case of Int)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kotlin List&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; val a:List&amp;lt;Int&amp;gt; = listOf(1,2,3)
+&amp;gt;&amp;gt;&amp;gt; a.add(1)
+error: unresolved reference: add
+
+&amp;gt;&amp;gt;&amp;gt; a.javaClass
+class java.util.Arrays$ArrayList
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kotlin ArrayList&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// kotlin
+&amp;gt;&amp;gt;&amp;gt; val a:ArrayList&amp;lt;Int&amp;gt; = arrayListOf(1,2,3)
+error: unresolved reference: ArrayList
+val a:ArrayList&amp;lt;Int&amp;gt; = arrayListOf(1,2,3)
+
+&amp;gt;&amp;gt;&amp;gt; val a = arrayListOf(1,2,3)
+&amp;gt;&amp;gt;&amp;gt; a.add(1)
+true
+&amp;gt;&amp;gt;&amp;gt; a.javaClass
+class java.util.ArrayList
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Not work. Because ArrayList is java.util.ArrayList&lt;/p&gt;
+
+&lt;p&gt;Kotlin Array&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; val a:Array&amp;lt;Int&amp;gt; = arrayOf(1,2,3)
+&amp;gt;&amp;gt;&amp;gt; a.add(1)
+error: unresolved reference: add
+
+&amp;gt;&amp;gt;&amp;gt; a.javaClass
+class [Ljava.lang.Integer;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kotlin IntArray&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; val a:IntArray = intArrayOf(1,2,3)
+&amp;gt;&amp;gt;&amp;gt; a.add(2)
+error: unresolved reference: add
+a.add(2)
+
+&amp;gt;&amp;gt;&amp;gt; a.javaClass
+class [I
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Well said</title>
@@ -267,15 +331,6 @@ Java Application is a program that works alone. Itself will operate as an indepe
 &lt;p&gt;&lt;a href=&#34;https://github.com/google/flexbox-layout&#34;&gt;https://github.com/google/flexbox-layout&lt;/a&gt;
 &lt;a href=&#34;https://www.w3.org/TR/css-flexbox-1/&#34;&gt;https://www.w3.org/TR/css-flexbox-1/&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Breakpoint</title>
-      <link>http://tommykw.github.io/post/breakpoint/</link>
-      <pubDate>Wed, 04 May 2016 16:46:30 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/breakpoint/</guid>
-      <description></description>
     </item>
     
   </channel>
