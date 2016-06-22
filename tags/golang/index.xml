@@ -7,7 +7,41 @@
     <language>en-us</language>
     
     
-    <updated>Tue, 21 Jun 2016 18:16:15 JST</updated>
+    <updated>Thu, 23 Jun 2016 07:36:13 JST</updated>
+    
+    <item>
+      <title>Rx.Single timer</title>
+      <link>http://tommykw.github.io/post/Rx.Single-timer/</link>
+      <pubDate>Thu, 23 Jun 2016 07:36:13 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/Rx.Single-timer/</guid>
+      <description>&lt;p&gt;The timer processing introduce the following two of Pattern in Rx.Single.&lt;/p&gt;
+
+&lt;p&gt;Repeat until OnError&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;callSingle().toObservable()
+    .subscribeOn(Schedulers.io())
+    .observeOn(AndroidSchedulers.mainThread())
+    .repeatWhen { it.flatMap({ Observable.timer(50, TimeUnit.SECONDS)}) }
+    .subscribe({
+        doStuff()
+    })
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Repeat until OnSuccess&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;callSingle().toObservable()
+    .subscribeOn(Schedulers.io())
+    .observeOn(AndroidSchedulers.mainThread())
+    .retryWhen { it.flatMap({ Observable.timer(50, TimeUnit.SECONDS)}) }
+    .subscribe({
+        doStuff()
+    })
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There is a need to convert once from Single to Observable&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Protocol Buffers</title>
@@ -322,17 +356,6 @@ null
 &amp;gt;&amp;gt;&amp;gt; listOf(1,2,3).find { it == 1 }
 1
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Applet</title>
-      <link>http://tommykw.github.io/post/applet/</link>
-      <pubDate>Sun, 08 May 2016 11:24:32 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/applet/</guid>
-      <description>&lt;p&gt;Java Applet is a program that can run on the Web browser or applet viewer.
-Java Application is a program that works alone. Itself will operate as an independent program.&lt;/p&gt;
 </description>
     </item>
     
