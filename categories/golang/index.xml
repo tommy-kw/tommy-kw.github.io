@@ -7,7 +7,33 @@
     <language>en-us</language>
     
     
-    <updated>Thu, 23 Jun 2016 07:36:13 JST</updated>
+    <updated>Thu, 07 Jul 2016 19:04:03 JST</updated>
+    
+    <item>
+      <title>Filename oneshot removement</title>
+      <link>http://tommykw.github.io/post/filename-oneshot-removement/</link>
+      <pubDate>Thu, 07 Jul 2016 19:04:03 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/filename-oneshot-removement/</guid>
+      <description>&lt;p&gt;Filename remove command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ls -al *.png | grep -v &amp;quot;fs8&amp;quot; | awk &#39;{print &amp;quot;rm &amp;quot;,$10}&#39; | sh
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Filename oneshot replacement</title>
+      <link>http://tommykw.github.io/post/filename-oneshot-replacement/</link>
+      <pubDate>Thu, 07 Jul 2016 19:01:42 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/filename-oneshot-replacement/</guid>
+      <description>&lt;p&gt;Filename replace command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;find . -name &amp;quot;*-fs8*&amp;quot; | sed -e &#39;s/\(\(.*\)-fs8\(.*\)\)/mv \1 \2\3/g&#39; | sh
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Rx.Single timer</title>
@@ -321,40 +347,6 @@ fun onCreate() {
 clearly identifies the property being accessed and the fact that it hasn&amp;rsquo;t been initialized&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;var callback:Callback? = null
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Deployment java app</title>
-      <link>http://tommykw.github.io/post/deployment-java-app/</link>
-      <pubDate>Tue, 10 May 2016 08:50:34 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/deployment-java-app/</guid>
-      <description>&lt;p&gt;To deploy the application in Tomcat, that the war file.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>What is the different singleOrNull and find</title>
-      <link>http://tommykw.github.io/post/what-is-the-different-singleOrNull-find/</link>
-      <pubDate>Sun, 08 May 2016 14:11:37 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/what-is-the-different-singleOrNull-find/</guid>
-      <description>&lt;p&gt;Although I believe that singleOrNull and find proviedes the same function was different.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt; listOf(1,2,3).singleOrNull { it &amp;gt; 0 }
-null
-&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3).find { it &amp;gt; 0 }
-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The following is the same result&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3).singleOrNull { it == 1 }
-1
-&amp;gt;&amp;gt;&amp;gt; listOf(1,2,3).find { it == 1 }
-1
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
