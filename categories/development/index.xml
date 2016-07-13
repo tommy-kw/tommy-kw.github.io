@@ -7,7 +7,30 @@
     <language>en-us</language>
     
     
-    <updated>Thu, 07 Jul 2016 19:04:03 JST</updated>
+    <updated>Wed, 13 Jul 2016 21:17:33 JST</updated>
+    
+    <item>
+      <title>To calculate the age</title>
+      <link>http://tommykw.github.io/post/to-calculate-the-age/</link>
+      <pubDate>Wed, 13 Jul 2016 21:17:33 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/to-calculate-the-age/</guid>
+      <description>&lt;p&gt;I want to calculate the age from birthday.
+I used the following libraries.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/JakeWharton/ThreeTenABP&#34;&gt;https://github.com/JakeWharton/ThreeTenABP&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JSR-310 backport for Android&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;val age = Period.between(LocalDate.of(1990, 1, 1), LocalDate.now())
+age.years // 25
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Filename oneshot removement</title>
@@ -304,51 +327,6 @@ procedural programming, is aimed at practical language that supports object-orie
       
       <guid>http://tommykw.github.io/post/what-is-the-differennt-any-nothing-unit/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Lateinit property before it has been initialized</title>
-      <link>http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/</link>
-      <pubDate>Fri, 13 May 2016 05:37:46 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/lateinit-property-before-it-has-been-initialized/</guid>
-      <description>&lt;p&gt;The follwing exceptions and are using the lateinit occurred.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class UdonMaker {
-    lateinit var callback:Callback
-    fun onCreate(callback: Callback) {
-        this.callback = callback
-        ...
-    }
-
-    fun onResult(result:Result) {
-        if (result.code == &amp;quot;OK&amp;quot;) {
-            callback.onSucess() // lateinit property before it has been initialized
-        } else {
-            callback.onFail()
-        }
-    }
-
-    interface callback {
-        onSuccess()
-        onFail()
-    }
-}
-
-fun onCreate() {
-    UdonMaker().onCreate(object : Callback {
-        override fun onSucess() {}
-        override fun onFail() {}
-    })
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Accessing a lateinit property before it has been initialized throws a special exception that
-clearly identifies the property being accessed and the fact that it hasn&amp;rsquo;t been initialized&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var callback:Callback? = null
-&lt;/code&gt;&lt;/pre&gt;
-</description>
     </item>
     
   </channel>
