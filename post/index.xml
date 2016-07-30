@@ -7,7 +7,25 @@
     <language>en-us</language>
     
     
-    <updated>Wed, 13 Jul 2016 21:17:33 JST</updated>
+    <updated>Sat, 30 Jul 2016 19:44:16 JST</updated>
+    
+    <item>
+      <title>Long as ymd</title>
+      <link>http://tommykw.github.io/post/long-as-ymd/</link>
+      <pubDate>Sat, 30 Jul 2016 19:44:16 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/long-as-ymd/</guid>
+      <description>&lt;p&gt;I seconds from the time, minute, I tried to calculate the time in Kotlin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fun longAsYmd(Long time): Unit {
+    val t = time.toInt()
+    val second = t % 60
+    val minutes = t / 60 % 60
+    val hour = t / 60 / 60
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>To calculate the age</title>
@@ -318,15 +336,6 @@ but make up somehow, I would like to contribute to the medical industry.&lt;/p&g
 Has been developed by the Mozilla. Functional programming, parallel actor model,
 procedural programming, is aimed at practical language that supports object-oriented programming.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>what is the differennt any nothing unit</title>
-      <link>http://tommykw.github.io/post/what-is-the-differennt-any-nothing-unit/</link>
-      <pubDate>Mon, 16 May 2016 14:28:24 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/what-is-the-differennt-any-nothing-unit/</guid>
-      <description></description>
     </item>
     
   </channel>
