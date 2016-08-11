@@ -15,7 +15,8 @@
       <pubDate>Thu, 11 Aug 2016 14:22:18 JST</pubDate>
       
       <guid>http://tommykw.github.io/post/drag-and-drop/</guid>
-      <description>&lt;p&gt;The animation implementation of drag-and-drop I wrote in kotlin.&lt;/p&gt;
+      <description>&lt;p&gt;The animation implementation of drag-and-drop I wrote in kotlin.
+This is a very easy and simple.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;// from view
 fromView.setOnTouchListener(View.OnTouchListener { view, event -&amp;gt;

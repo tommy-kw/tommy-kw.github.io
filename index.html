@@ -102,7 +102,7 @@
 <div class="post-meta">Thu, Aug 11, 2016 - Read in 1 Min </div>
 </header>
 <div class="summary">
-    The animation implementation of drag-and-drop I wrote in kotlin. // from view fromView.setOnTouchListener(View.OnTouchListener { view, event -&gt; if (event.getAction() == MotionEvent.ACTION_DOWN) { val data = ClipData.newPlainText(&quot;&quot;, &quot;&quot;) view.startDrag(data, View.DragShadowBuilder(view), view, View.DRAG_FLAG_GLOBAL) view.setVisibility(View.INVISIBLE) return@OnTouchListener true } else { return@OnTouchListener false } }) // to view toView.setOnDragListener(View.OnDragListener { view, event -&gt; if (event.action == DragEvent.ACTION_DROP) { // do something for drop (event.localState as View).visibility = View.INVISIBLE } else if (event.action == DragEvent.ACTION_DRAG_ENDED)
+    The animation implementation of drag-and-drop I wrote in kotlin. This is a very easy and simple. // from view fromView.setOnTouchListener(View.OnTouchListener { view, event -&gt; if (event.getAction() == MotionEvent.ACTION_DOWN) { val data = ClipData.newPlainText(&quot;&quot;, &quot;&quot;) view.startDrag(data, View.DragShadowBuilder(view), view, View.DRAG_FLAG_GLOBAL) view.setVisibility(View.INVISIBLE) return@OnTouchListener true } else { return@OnTouchListener false } }) // to view toView.setOnDragListener(View.OnDragListener { view, event -&gt; if (event.action == DragEvent.ACTION_DROP) { // do something for drop (event.localState as View).visibility =
 </div>
 <footer>
 <a href='http://tommykw.github.io/post/drag-and-drop/'><nobr>Read more →</nobr></a>
