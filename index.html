@@ -98,6 +98,23 @@
                             
                                 <article class="post">
 <header>
+<h2><a href="http://tommykw.github.io/post/drag-and-drop/">Drag and drop </a> </h2>
+<div class="post-meta">Thu, Aug 11, 2016 - Read in 1 Min </div>
+</header>
+<div class="summary">
+    The animation implementation of drag-and-drop I wrote in kotlin. // from view fromView.setOnTouchListener(View.OnTouchListener { view, event -&gt; if (event.getAction() == MotionEvent.ACTION_DOWN) { val data = ClipData.newPlainText(&quot;&quot;, &quot;&quot;) view.startDrag(data, View.DragShadowBuilder(view), view, View.DRAG_FLAG_GLOBAL) view.setVisibility(View.INVISIBLE) return@OnTouchListener true } else { return@OnTouchListener false } }) // to view toView.setOnDragListener(View.OnDragListener { view, event -&gt; if (event.action == DragEvent.ACTION_DROP) { // do something for drop (event.localState as View).visibility = View.INVISIBLE } else if (event.action == DragEvent.ACTION_DRAG_ENDED)
+</div>
+<footer>
+<a href='http://tommykw.github.io/post/drag-and-drop/'><nobr>Read more →</nobr></a>
+</footer>
+</article>
+
+
+                            
+                        
+                            
+                                <article class="post">
+<header>
 <h2><a href="http://tommykw.github.io/post/long-as-ymd/">Long as ymd </a> </h2>
 <div class="post-meta">Sat, Jul 30, 2016 - Read in 1 Min </div>
 </header>
@@ -242,23 +259,6 @@
 </div>
 <footer>
 <a href='http://tommykw.github.io/post/Fragment-IllegalStateException/'><nobr>Read more →</nobr></a>
-</footer>
-</article>
-
-
-                            
-                        
-                            
-                                <article class="post">
-<header>
-<h2><a href="http://tommykw.github.io/post/databinding/">Data Binding </a> </h2>
-<div class="post-meta">Wed, Jun 1, 2016 - Read in 1 Min </div>
-</header>
-<div class="summary">
-    Data Binding is the technology to combine static or dynamic data source UI such as XML. Thre is a need to set the layout tag as follows &lt;layout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt; ... &lt;/layout&gt; Please be sure to define the xmlns attribute. Data binding can be used, but because you can not be an event of onClick calls. Not called is onSampleClick method in the case of the following. &lt;layout&gt; &lt;data&gt; &lt;variable name=&quot;activity' type=&quot;com.activity.MainActivity&quot; /&gt; &lt;/data&gt; ...
-</div>
-<footer>
-<a href='http://tommykw.github.io/post/databinding/'><nobr>Read more →</nobr></a>
 </footer>
 </article>
 

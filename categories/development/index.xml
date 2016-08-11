@@ -7,7 +7,42 @@
     <language>en-us</language>
     
     
-    <updated>Sat, 30 Jul 2016 19:44:16 JST</updated>
+    <updated>Thu, 11 Aug 2016 14:22:18 JST</updated>
+    
+    <item>
+      <title>Drag and drop</title>
+      <link>http://tommykw.github.io/post/drag-and-drop/</link>
+      <pubDate>Thu, 11 Aug 2016 14:22:18 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/drag-and-drop/</guid>
+      <description>&lt;p&gt;The animation implementation of drag-and-drop I wrote in kotlin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// from view
+fromView.setOnTouchListener(View.OnTouchListener { view, event -&amp;gt;
+    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+        val data = ClipData.newPlainText(&amp;quot;&amp;quot;, &amp;quot;&amp;quot;)
+        view.startDrag(data, View.DragShadowBuilder(view), view, View.DRAG_FLAG_GLOBAL)
+        view.setVisibility(View.INVISIBLE)
+        return@OnTouchListener true
+    } else {
+        return@OnTouchListener false
+    }
+})
+
+// to view
+toView.setOnDragListener(View.OnDragListener { view, event -&amp;gt;
+    if (event.action == DragEvent.ACTION_DROP) {
+        // do something for drop
+        (event.localState as View).visibility = View.INVISIBLE
+    } else if (event.action == DragEvent.ACTION_DRAG_ENDED) {
+        val v = (event.localState as View)
+        v.post({ v.visibility = View.VISIBLE })
+    }
+    return@OnDragListener true
+})
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Long as ymd</title>
@@ -323,18 +358,6 @@ Not called is onSampleClick method in the case of the following.&lt;/p&gt;
 
 &lt;p&gt;It is still missing from the story at all what if the proceeds with the good,
 but make up somehow, I would like to contribute to the medical industry.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>http://tommykw.github.io/post/rust/</link>
-      <pubDate>Thu, 19 May 2016 13:45:57 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/rust/</guid>
-      <description>&lt;p&gt;Rust is a programming language of parallel and multi-paradim.
-Has been developed by the Mozilla. Functional programming, parallel actor model,
-procedural programming, is aimed at practical language that supports object-oriented programming.&lt;/p&gt;
 </description>
     </item>
     
