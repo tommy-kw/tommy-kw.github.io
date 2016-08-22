@@ -7,7 +7,22 @@
     <language>en-us</language>
     
     
-    <updated>Thu, 11 Aug 2016 14:22:18 JST</updated>
+    <updated>Tue, 23 Aug 2016 00:25:42 JST</updated>
+    
+    <item>
+      <title>Fragment on fragment</title>
+      <link>http://tommykw.github.io/post/fragment-on-fragment/</link>
+      <pubDate>Tue, 23 Aug 2016 00:25:42 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/fragment-on-fragment/</guid>
+      <description>&lt;p&gt;Implementation of the fragmnet on fragment.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;val transaction = fragmentManager.beginTransaction()
+transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+transaction.replace(R.id.placeholder, fragment).addToBackStack(null).commit()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Drag and drop</title>
@@ -345,21 +360,6 @@ Not called is onSampleClick method in the case of the following.&lt;/p&gt;
       
       <guid>http://tommykw.github.io/post/item-touch-helper/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Start first medical code project</title>
-      <link>http://tommykw.github.io/post/start-first-medical-code-project/</link>
-      <pubDate>Sat, 21 May 2016 14:22:16 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/start-first-medical-code-project/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve created a repository for the development of the sensor or application detects a concussion.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/MedicalCode/ConcussionSensor&#34;&gt;https://github.com/MedicalCode/ConcussionSensor&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It is still missing from the story at all what if the proceeds with the good,
-but make up somehow, I would like to contribute to the medical industry.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
