@@ -10,7 +10,7 @@
     <updated>Thu, 25 Aug 2016 18:58:32 JST</updated>
     
     <item>
-      <title>Resolve error in as</title>
+      <title>Resolve error in AS</title>
       <link>http://tommykw.github.io/post/resolve-error-in-as/</link>
       <pubDate>Thu, 25 Aug 2016 18:58:32 JST</pubDate>
       
@@ -23,13 +23,15 @@ SDK location not found. Define location with sdk.dir in the local.properties fil
 or with an ANDROID_HOME environment variable.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;I do the following in the corresponding you in my case.
-1. Create local.properties
+&lt;p&gt;I do the following in the corresponding you in my case.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. Create local.properties
 2. Add local.properties to sdk.dir=/Users/xxx/Downloads/android-sdk-macosx
 3. set ANDROID_HOME=/Users/xxx/Downloads/android-sdk-macosx/sdk
 4. export ANDROID_HOME=/Users/xxx/Downloads/android-sdk-macosx/sdk
 5. ./gradlew
-6. reinstall android studio&lt;/p&gt;
+6. reinstall android studio
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;It works.&lt;/p&gt;
 </description>
