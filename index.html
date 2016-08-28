@@ -98,6 +98,23 @@
                             
                                 <article class="post">
 <header>
+<h2><a href="http://tommykw.github.io/post/java-generics-to-kotlin/">Java generics to kotlin </a> </h2>
+<div class="post-meta">Sun, Aug 28, 2016 - Read in 1 Min </div>
+</header>
+<div class="summary">
+    Generics code of java was expressed using the reified of kotlin. # Java public &lt;T extends BaseCode&gt; T getCode(Class&lt;T&gt; type) { return (T) codes.get(type); } # Kotlin inline fun &lt;reified T : BaseCode&gt; Code.system() = getCode(T::class.java)
+</div>
+<footer>
+<a href='http://tommykw.github.io/post/java-generics-to-kotlin/'><nobr>Read more →</nobr></a>
+</footer>
+</article>
+
+
+                            
+                        
+                            
+                                <article class="post">
+<header>
 <h2><a href="http://tommykw.github.io/post/resolve-error-in-as/">Resolve error in AS </a> </h2>
 <div class="post-meta">Thu, Aug 25, 2016 - Read in 1 Min </div>
 </header>
@@ -242,23 +259,6 @@
 </div>
 <footer>
 <a href='http://tommykw.github.io/post/protocol-buffer/'><nobr>Read more →</nobr></a>
-</footer>
-</article>
-
-
-                            
-                        
-                            
-                                <article class="post">
-<header>
-<h2><a href="http://tommykw.github.io/post/collection-array/">Collection array </a> </h2>
-<div class="post-meta">Sun, Jun 12, 2016 - Read in 1 Min </div>
-</header>
-<div class="summary">
-    There are four of tye array type in Kotlin. List ArrayList Array IntArray (In the case of Int) Kotlin List &gt;&gt;&gt; val a:List&lt;Int&gt; = listOf(1,2,3) &gt;&gt;&gt; a.add(1) error: unresolved reference: add &gt;&gt;&gt; a.javaClass class java.util.Arrays$ArrayList Kotlin ArrayList // kotlin &gt;&gt;&gt; val a:ArrayList&lt;Int&gt; = arrayListOf(1,2,3) error: unresolved reference: ArrayList val a:ArrayList&lt;Int&gt; = arrayListOf(1,2,3) &gt;&gt;&gt; val a = arrayListOf(1,2,3) &gt;&gt;&gt; a.add(1) true &gt;&gt;&gt; a.javaClass class java.util.ArrayList Not work. Because ArrayList is java.util.ArrayList
-</div>
-<footer>
-<a href='http://tommykw.github.io/post/collection-array/'><nobr>Read more →</nobr></a>
 </footer>
 </article>
 

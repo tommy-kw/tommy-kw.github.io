@@ -7,7 +7,27 @@
     <language>en-us</language>
     
     
-    <updated>Thu, 25 Aug 2016 18:58:32 JST</updated>
+    <updated>Sun, 28 Aug 2016 23:01:04 JST</updated>
+    
+    <item>
+      <title>Java generics to kotlin</title>
+      <link>http://tommykw.github.io/post/java-generics-to-kotlin/</link>
+      <pubDate>Sun, 28 Aug 2016 23:01:04 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/java-generics-to-kotlin/</guid>
+      <description>&lt;p&gt;Generics code of java was expressed using the reified of kotlin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Java
+public &amp;lt;T extends BaseCode&amp;gt; T getCode(Class&amp;lt;T&amp;gt; type) {
+    return (T) codes.get(type);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;# Kotlin
+inline fun &amp;lt;reified T : BaseCode&amp;gt; Code.system() = getCode(T::class.java)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Resolve error in AS</title>
@@ -355,30 +375,6 @@ Not called is onSampleClick method in the case of the following.&lt;/p&gt;
       
       <guid>http://tommykw.github.io/post/awareness-api/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Data interchange format</title>
-      <link>http://tommykw.github.io/post/data-interchange-format/</link>
-      <pubDate>Tue, 24 May 2016 08:05:15 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/data-interchange-format/</guid>
-      <description>&lt;p&gt;Data interchange format is as follows:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/google/protobuf&#34;&gt;Protocol Buffers&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Protocol Buffers is Google&amp;rsquo;s data interchange format&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;hoge&#34;&gt;Serializable&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It called the serialization or serialize it to write the object to the output stream&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://developer.android.com/reference/android/os/Parcelable.html&#34;&gt;Parcelable&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
   </channel>
