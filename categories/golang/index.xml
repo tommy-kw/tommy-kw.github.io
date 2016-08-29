@@ -7,7 +7,30 @@
     <language>en-us</language>
     
     
-    <updated>Sun, 28 Aug 2016 23:01:04 JST</updated>
+    <updated>Mon, 29 Aug 2016 23:53:03 JST</updated>
+    
+    <item>
+      <title>Nullpointer serializable</title>
+      <link>http://tommykw.github.io/post/nullpointer-serializable/</link>
+      <pubDate>Mon, 29 Aug 2016 23:53:03 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/nullpointer-serializable/</guid>
+      <description>&lt;p&gt;The following code is nullpointer exception.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private val userLumps by lazy {
+    intent.getSerializableExtra(ARG_USER_LUMP) as ArrayList&amp;lt;UserLump&amp;gt;
+}
+private val adapter = OriginalAdapter(userLumps)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Error details&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Caused by: java.lang.NullPointerException: Attempt to invoke virtual method &#39;java.io.Serializable android.content.Intent.getSerializableExtra(java.lang.String)&#39; on a null object reference
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It becomes null before it is initialized wit the lifecycle proble. No proble if set in onCreate.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java generics to kotlin</title>
@@ -366,15 +389,6 @@ Not called is onSampleClick method in the case of the following.&lt;/p&gt;
 &amp;lt;/layout&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>awareness api</title>
-      <link>http://tommykw.github.io/post/awareness-api/</link>
-      <pubDate>Thu, 26 May 2016 02:12:08 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/awareness-api/</guid>
-      <description></description>
     </item>
     
   </channel>
