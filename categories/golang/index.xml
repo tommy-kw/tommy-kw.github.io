@@ -7,7 +7,28 @@
     <language>en-us</language>
     
     
-    <updated>Mon, 29 Aug 2016 23:53:03 JST</updated>
+    <updated>Fri, 23 Sep 2016 13:28:04 JST</updated>
+    
+    <item>
+      <title>EnclosingClass</title>
+      <link>http://tommykw.github.io/post/enclosingClass/</link>
+      <pubDate>Fri, 23 Sep 2016 13:28:04 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/enclosingClass/</guid>
+      <description>
+
+&lt;h2 id=&#34;what-is-enclosingclass:42cf7e80bdb34d427ada69920409723d&#34;&gt;What is enclosingClass.&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;https://github.com/MicroUtils/kotlin-logging/blob/5c297178d7edcae6af2e248328c42dad11adc88c/src/main/kotlin/mu/internal/KLoggerNameResolver.kt
+inline private fun &amp;lt;T: Any&amp;gt; unwrapCompanionClass(ofClass: Class&amp;lt;T&amp;gt;): Class&amp;lt;*&amp;gt; = 
+    if (ofClass.enclosingClass != null &amp;amp;&amp;amp; ofClass.enclosingClass.kotlin.companionObject?.java == ofClass) {
+        ofClass.enclosingClass
+    } else {
+        ofClass
+    }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Nullpointer serializable</title>
@@ -343,51 +364,6 @@ The following error will occur if you have an operation.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The operation in onCreate, you need to stop the operation of Fragment in asynchronous.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Data Binding</title>
-      <link>http://tommykw.github.io/post/databinding/</link>
-      <pubDate>Wed, 01 Jun 2016 00:27:32 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/databinding/</guid>
-      <description>&lt;p&gt;Data Binding is the technology to combine static or dynamic data source UI such as XML.&lt;/p&gt;
-
-&lt;p&gt;Thre is a need to set the layout tag as follows&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;layout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&amp;gt;
-    ...
-&amp;lt;/layout&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Please be sure to define the xmlns attribute.
-Data binding can be used, but because you can not be an event of onClick calls.
-Not called is onSampleClick method in the case of the following.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;layout&amp;gt;
-    &amp;lt;data&amp;gt;
-       &amp;lt;variable name=&amp;quot;activity&#39; type=&amp;quot;com.activity.MainActivity&amp;quot; /&amp;gt;
-    &amp;lt;/data&amp;gt;
-    ...
-
-    &amp;lt;Button
-        onClick=&amp;quot;@{activity.onSampleClick}&amp;quot; /&amp;gt; // not work
-&amp;lt;/layout&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Please be sure to define the xmnls attribute to the layout.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;layout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&amp;gt;
-    &amp;lt;data&amp;gt;
-       &amp;lt;variable name=&amp;quot;activity&#39; type=&amp;quot;com.activity.MainActivity&amp;quot; /&amp;gt;
-    &amp;lt;/data&amp;gt;
-    ...
-
-    &amp;lt;Button
-        onClick=&amp;quot;@{activity.onSampleClick}&amp;quot; /&amp;gt; // work
-&amp;lt;/layout&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

@@ -98,6 +98,23 @@
                             
                                 <article class="post">
 <header>
+<h2><a href="http://tommykw.github.io/post/enclosingClass/">EnclosingClass </a> </h2>
+<div class="post-meta">Fri, Sep 23, 2016 - Read in 1 Min </div>
+</header>
+<div class="summary">
+    What is enclosingClass. https://github.com/MicroUtils/kotlin-logging/blob/5c297178d7edcae6af2e248328c42dad11adc88c/src/main/kotlin/mu/internal/KLoggerNameResolver.kt inline private fun &lt;T: Any&gt; unwrapCompanionClass(ofClass: Class&lt;T&gt;): Class&lt;*&gt; = if (ofClass.enclosingClass != null &amp;&amp; ofClass.enclosingClass.kotlin.companionObject?.java == ofClass) { ofClass.enclosingClass } else { ofClass }
+</div>
+<footer>
+<a href='http://tommykw.github.io/post/enclosingClass/'><nobr>Read more →</nobr></a>
+</footer>
+</article>
+
+
+                            
+                        
+                            
+                                <article class="post">
+<header>
 <h2><a href="http://tommykw.github.io/post/nullpointer-serializable/">Nullpointer serializable </a> </h2>
 <div class="post-meta">Mon, Aug 29, 2016 - Read in 1 Min </div>
 </header>
@@ -242,23 +259,6 @@
 </div>
 <footer>
 <a href='http://tommykw.github.io/post/filename-oneshot-replacement/'><nobr>Read more →</nobr></a>
-</footer>
-</article>
-
-
-                            
-                        
-                            
-                                <article class="post">
-<header>
-<h2><a href="http://tommykw.github.io/post/Rx.Single-timer/">Rx.Single timer </a> </h2>
-<div class="post-meta">Thu, Jun 23, 2016 - Read in 1 Min </div>
-</header>
-<div class="summary">
-    The timer processing introduce the following two of Pattern in Rx.Single. Repeat until OnError callSingle().toObservable() .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()) .repeatWhen { it.flatMap({ Observable.timer(50, TimeUnit.SECONDS)}) } .subscribe({ doStuff() }) Repeat until OnSuccess callSingle().toObservable() .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()) .retryWhen { it.flatMap({ Observable.timer(50, TimeUnit.SECONDS)}) } .subscribe({ doStuff() }) There is a need to convert once from Single to Observable
-</div>
-<footer>
-<a href='http://tommykw.github.io/post/Rx.Single-timer/'><nobr>Read more →</nobr></a>
 </footer>
 </article>
 
