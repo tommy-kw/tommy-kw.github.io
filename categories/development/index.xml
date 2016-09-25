@@ -7,7 +7,65 @@
     <language>en-us</language>
     
     
-    <updated>Fri, 23 Sep 2016 13:28:04 JST</updated>
+    <updated>Sun, 25 Sep 2016 23:25:29 JST</updated>
+    
+    <item>
+      <title>Design pattern</title>
+      <link>http://tommykw.github.io/post/design-pattern/</link>
+      <pubDate>Sun, 25 Sep 2016 23:25:29 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/design-pattern/</guid>
+      <description>
+
+&lt;p&gt;I tried to learn the design pattern. I will try to write a sample in kotlin.&lt;/p&gt;
+
+&lt;h2 id=&#34;iterator:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Iterator&lt;/h2&gt;
+
+&lt;h2 id=&#34;adapter:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Adapter&lt;/h2&gt;
+
+&lt;h2 id=&#34;templatemethod:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;TemplateMethod&lt;/h2&gt;
+
+&lt;h2 id=&#34;factorymethod:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;FactoryMethod&lt;/h2&gt;
+
+&lt;h2 id=&#34;singleton:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Singleton&lt;/h2&gt;
+
+&lt;h2 id=&#34;prototype:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Prototype&lt;/h2&gt;
+
+&lt;h2 id=&#34;builder:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Builder&lt;/h2&gt;
+
+&lt;h2 id=&#34;abstractfactory:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;AbstractFactory&lt;/h2&gt;
+
+&lt;h2 id=&#34;bridge:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Bridge&lt;/h2&gt;
+
+&lt;h2 id=&#34;strategy:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Strategy&lt;/h2&gt;
+
+&lt;h2 id=&#34;composite:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Composite&lt;/h2&gt;
+
+&lt;h2 id=&#34;decorator:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Decorator&lt;/h2&gt;
+
+&lt;h2 id=&#34;visitor:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Visitor&lt;/h2&gt;
+
+&lt;h2 id=&#34;chain-of-responsibility:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Chain of Responsibility&lt;/h2&gt;
+
+&lt;h2 id=&#34;facade:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Facade&lt;/h2&gt;
+
+&lt;h2 id=&#34;mediator:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Mediator&lt;/h2&gt;
+
+&lt;h2 id=&#34;observer:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Observer&lt;/h2&gt;
+
+&lt;h2 id=&#34;memento:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Memento&lt;/h2&gt;
+
+&lt;h2 id=&#34;state:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;State&lt;/h2&gt;
+
+&lt;h2 id=&#34;flyweight:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Flyweight&lt;/h2&gt;
+
+&lt;h2 id=&#34;proxy:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Proxy&lt;/h2&gt;
+
+&lt;h2 id=&#34;command:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Command&lt;/h2&gt;
+
+&lt;h2 id=&#34;interpreter:ff3eb39a71c5f6cd78c7b58ca248f4cc&#34;&gt;Interpreter&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>EnclosingClass</title>
@@ -348,22 +406,6 @@ these are the keys that will unlock the door to personal excellence - Confucius
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;It is simple, but very difficult. But it leads to only your heights.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fragment IllegalStateException</title>
-      <link>http://tommykw.github.io/post/Fragment-IllegalStateException/</link>
-      <pubDate>Wed, 01 Jun 2016 13:56:11 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/Fragment-IllegalStateException/</guid>
-      <description>&lt;p&gt;Operation to FragmentManager must be in front of the Activity of the side onSaveInstanceState().
-The following error will occur if you have an operation.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Can not perform this action after onSaveInstanceState()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The operation in onCreate, you need to stop the operation of Fragment in asynchronous.&lt;/p&gt;
 </description>
     </item>
     
