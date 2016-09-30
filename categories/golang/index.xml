@@ -7,7 +7,39 @@
     <language>en-us</language>
     
     
-    <updated>Sun, 25 Sep 2016 23:25:29 JST</updated>
+    <updated>Sat, 01 Oct 2016 02:42:06 JST</updated>
+    
+    <item>
+      <title>Nothing</title>
+      <link>http://tommykw.github.io/post/nothing/</link>
+      <pubDate>Sat, 01 Oct 2016 02:42:06 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/nothing/</guid>
+      <description>
+
+&lt;h2 id=&#34;stdlib-kotlin-nothing:e1e42e962a3b8f857a962e6e29c3e8c2&#34;&gt;stdlib / kotlin / Nothing&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;kotlin/core/builtins/native/kotlin/Nothing.kt
+
+public class Nothing private() {}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nothing has no instances. You can use Nothing to represent &amp;ldquo;a value that never exists&amp;rdquo;.
+for example. if a function has the return type of Nothing. it means that it never returns.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-use:e1e42e962a3b8f857a962e6e29c3e8c2&#34;&gt;How to use&lt;/h2&gt;
+
+&lt;p&gt;When you represent a null is should I use Nothing.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; fun crash(x:Nothing) {}
+&amp;gt;&amp;gt;&amp;gt; crash(&amp;quot;foo&amp;quot;)
+error: type mismatch: inferred type is String but Nothing was expected
+
+&amp;gt;&amp;gt;&amp;gt; fun crash(x:Nothing?) {}
+&amp;gt;&amp;gt;&amp;gt; crash(null)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Design pattern</title>
@@ -392,20 +424,6 @@ a.add(2)
 &amp;gt;&amp;gt;&amp;gt; a.javaClass
 class [I
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Well said</title>
-      <link>http://tommykw.github.io/post/well-said/</link>
-      <pubDate>Thu, 02 Jun 2016 07:55:49 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/well-said/</guid>
-      <description>&lt;pre&gt;&lt;code&gt;The will to win, the desire to succeed, the urge to reach your full potential...
-these are the keys that will unlock the door to personal excellence - Confucius
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It is simple, but very difficult. But it leads to only your heights.&lt;/p&gt;
 </description>
     </item>
     
