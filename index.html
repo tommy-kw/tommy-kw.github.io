@@ -98,6 +98,23 @@
                             
                                 <article class="post">
 <header>
+<h2><a href="http://tommykw.github.io/post/semantic-validation/">Semantic validation </a> </h2>
+<div class="post-meta">Sun, Nov 13, 2016 - Read in 1 Min </div>
+</header>
+<div class="summary">
+    Validation of Kotlin function is very useful. I will explain the semantic validation of Kotlin. Argument validaiton require require checks arguments. Seeing the following sources shows you throwing IllegalArgumentException @kotlin.internal.InlineOnly public inline fun require(value: Boolean, lazyMessage: () -&gt; Any): Unit { if (!value) { val message = lazyMessage() throw IllegalArgumentException(message.toString()) } } State validation check check checks states. Seeing the following sources shows you throwing IllegalStateException @kotlin.internal.InlineOnly public inline fun check(value: Boolean, lazyMessage: () -&gt; Any): Unit { if (!value) { val message = lazyMessage() throw IllegalStateException(message.toString()) } } Assertion validation assert An assertion is described as a row and serves as a checkpoint.
+</div>
+<footer>
+<a href='http://tommykw.github.io/post/semantic-validation/'><nobr>Read more →</nobr></a>
+</footer>
+</article>
+
+
+                            
+                        
+                            
+                                <article class="post">
+<header>
 <h2><a href="http://tommykw.github.io/post/nothing/">Nothing </a> </h2>
 <div class="post-meta">Sat, Oct 1, 2016 - Read in 1 Min </div>
 </header>
@@ -242,23 +259,6 @@
 </div>
 <footer>
 <a href='http://tommykw.github.io/post/long-as-ymd/'><nobr>Read more →</nobr></a>
-</footer>
-</article>
-
-
-                            
-                        
-                            
-                                <article class="post">
-<header>
-<h2><a href="http://tommykw.github.io/post/to-calculate-the-age/">To calculate the age </a> </h2>
-<div class="post-meta">Wed, Jul 13, 2016 - Read in 1 Min </div>
-</header>
-<div class="summary">
-    I want to calculate the age from birthday. I used the following libraries. https://github.com/JakeWharton/ThreeTenABP JSR-310 backport for Android val age = Period.between(LocalDate.of(1990, 1, 1), LocalDate.now()) age.years // 25
-</div>
-<footer>
-<a href='http://tommykw.github.io/post/to-calculate-the-age/'><nobr>Read more →</nobr></a>
 </footer>
 </article>
 

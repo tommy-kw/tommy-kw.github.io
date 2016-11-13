@@ -7,7 +7,78 @@
     <language>en-us</language>
     
     
-    <updated>Sat, 01 Oct 2016 02:42:06 JST</updated>
+    <updated>Sun, 13 Nov 2016 11:54:37 JST</updated>
+    
+    <item>
+      <title>Semantic validation</title>
+      <link>http://tommykw.github.io/post/semantic-validation/</link>
+      <pubDate>Sun, 13 Nov 2016 11:54:37 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/semantic-validation/</guid>
+      <description>
+
+&lt;p&gt;Validation of Kotlin function is very useful.
+I will explain the semantic validation of Kotlin.&lt;/p&gt;
+
+&lt;h2 id=&#34;argument-validaiton:743419a5e94c81a7bec95dd224f1a608&#34;&gt;Argument validaiton&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;require
+&lt;code&gt;require&lt;/code&gt; checks arguments.
+Seeing the following sources shows you throwing &lt;code&gt;IllegalArgumentException&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;@kotlin.internal.InlineOnly
+public inline fun require(value: Boolean, lazyMessage: () -&amp;gt; Any): Unit {
+    if (!value) {
+        val message = lazyMessage()
+        throw IllegalArgumentException(message.toString())
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;state-validation:743419a5e94c81a7bec95dd224f1a608&#34;&gt;State validation&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;check
+&lt;code&gt;check&lt;/code&gt; checks states.
+Seeing the following sources shows you throwing &lt;code&gt;IllegalStateException&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;@kotlin.internal.InlineOnly
+public inline fun check(value: Boolean, lazyMessage: () -&amp;gt; Any): Unit {
+    if (!value) {
+        val message = lazyMessage()
+        throw IllegalStateException(message.toString())
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;assertion-validation:743419a5e94c81a7bec95dd224f1a608&#34;&gt;Assertion validation&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;assert
+An assertion is described as a row and serves as a checkpoint.
+If you describe it before any processing you can check the precondition and if it is
+later you can check the postcondition.
+Runtime assertions have been enabled on the JVM using the &lt;code&gt;-ea&lt;/code&gt; option.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;@kotlin.internal.InlineOnly
+public inline fun assert(value: Boolean, lazyMessage:() -&amp;gt; Any) {
+    @Suppress(&amp;quot;NON_PUBLIC_CALL_FROM_PUBLIC_INLINE&amp;quot;)
+    if (_Assertions.ENABLED) {
+        if (!value) {
+            val message = lazyMessage()
+            throw AssertionError(message)
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;require、check and assert are very useful. I will use it in the future.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Nothing</title>
@@ -359,70 +430,6 @@ mechanism for serializing structured data.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ brew install protobuf 
 $ protoc --version
 libprotoc 2.6.1
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Collection array</title>
-      <link>http://tommykw.github.io/post/collection-array/</link>
-      <pubDate>Sun, 12 Jun 2016 11:21:03 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/collection-array/</guid>
-      <description>&lt;p&gt;There are four of tye array type in Kotlin.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;List&lt;/li&gt;
-&lt;li&gt;ArrayList&lt;/li&gt;
-&lt;li&gt;Array&lt;/li&gt;
-&lt;li&gt;IntArray (In the case of Int)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Kotlin List&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; val a:List&amp;lt;Int&amp;gt; = listOf(1,2,3)
-&amp;gt;&amp;gt;&amp;gt; a.add(1)
-error: unresolved reference: add
-
-&amp;gt;&amp;gt;&amp;gt; a.javaClass
-class java.util.Arrays$ArrayList
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Kotlin ArrayList&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// kotlin
-&amp;gt;&amp;gt;&amp;gt; val a:ArrayList&amp;lt;Int&amp;gt; = arrayListOf(1,2,3)
-error: unresolved reference: ArrayList
-val a:ArrayList&amp;lt;Int&amp;gt; = arrayListOf(1,2,3)
-
-&amp;gt;&amp;gt;&amp;gt; val a = arrayListOf(1,2,3)
-&amp;gt;&amp;gt;&amp;gt; a.add(1)
-true
-&amp;gt;&amp;gt;&amp;gt; a.javaClass
-class java.util.ArrayList
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Not work. Because ArrayList is java.util.ArrayList&lt;/p&gt;
-
-&lt;p&gt;Kotlin Array&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; val a:Array&amp;lt;Int&amp;gt; = arrayOf(1,2,3)
-&amp;gt;&amp;gt;&amp;gt; a.add(1)
-error: unresolved reference: add
-
-&amp;gt;&amp;gt;&amp;gt; a.javaClass
-class [Ljava.lang.Integer;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Kotlin IntArray&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; val a:IntArray = intArrayOf(1,2,3)
-&amp;gt;&amp;gt;&amp;gt; a.add(2)
-error: unresolved reference: add
-a.add(2)
-
-&amp;gt;&amp;gt;&amp;gt; a.javaClass
-class [I
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
