@@ -101,10 +101,11 @@ I will explain the semantic validation of Kotlin.</p>
 <h2 id="argument-validaiton:743419a5e94c81a7bec95dd224f1a608">Argument validaiton</h2>
 
 <ul>
-<li>require
-<code>require</code> checks arguments.
-Seeing the following sources shows you throwing <code>IllegalArgumentException</code></li>
+<li>require</li>
 </ul>
+
+<p><code>require</code> checks arguments.
+Seeing the following sources shows you throwing <code>IllegalArgumentException</code></p>
 
 <pre><code>@kotlin.internal.InlineOnly
 public inline fun require(value: Boolean, lazyMessage: () -&gt; Any): Unit {
@@ -118,10 +119,11 @@ public inline fun require(value: Boolean, lazyMessage: () -&gt; Any): Unit {
 <h2 id="state-validation:743419a5e94c81a7bec95dd224f1a608">State validation</h2>
 
 <ul>
-<li>check
-<code>check</code> checks states.
-Seeing the following sources shows you throwing <code>IllegalStateException</code></li>
+<li>check</li>
 </ul>
+
+<p><code>check</code> checks states.
+Seeing the following sources shows you throwing <code>IllegalStateException</code></p>
 
 <pre><code>@kotlin.internal.InlineOnly
 public inline fun check(value: Boolean, lazyMessage: () -&gt; Any): Unit {
@@ -135,12 +137,13 @@ public inline fun check(value: Boolean, lazyMessage: () -&gt; Any): Unit {
 <h2 id="assertion-validation:743419a5e94c81a7bec95dd224f1a608">Assertion validation</h2>
 
 <ul>
-<li>assert
-An assertion is described as a row and serves as a checkpoint.
+<li>assert</li>
+</ul>
+
+<p>An assertion is described as a row and serves as a checkpoint.
 If you describe it before any processing you can check the precondition and if it is
 later you can check the postcondition.
-Runtime assertions have been enabled on the JVM using the <code>-ea</code> option.</li>
-</ul>
+Runtime assertions have been enabled on the JVM using the <code>-ea</code> option.</p>
 
 <pre><code>@kotlin.internal.InlineOnly
 public inline fun assert(value: Boolean, lazyMessage:() -&gt; Any) {

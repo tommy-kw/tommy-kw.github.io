@@ -23,10 +23,11 @@ I will explain the semantic validation of Kotlin.&lt;/p&gt;
 &lt;h2 id=&#34;argument-validaiton:743419a5e94c81a7bec95dd224f1a608&#34;&gt;Argument validaiton&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;require
-&lt;code&gt;require&lt;/code&gt; checks arguments.
-Seeing the following sources shows you throwing &lt;code&gt;IllegalArgumentException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;require&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;require&lt;/code&gt; checks arguments.
+Seeing the following sources shows you throwing &lt;code&gt;IllegalArgumentException&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;@kotlin.internal.InlineOnly
 public inline fun require(value: Boolean, lazyMessage: () -&amp;gt; Any): Unit {
@@ -40,10 +41,11 @@ public inline fun require(value: Boolean, lazyMessage: () -&amp;gt; Any): Unit {
 &lt;h2 id=&#34;state-validation:743419a5e94c81a7bec95dd224f1a608&#34;&gt;State validation&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;check
-&lt;code&gt;check&lt;/code&gt; checks states.
-Seeing the following sources shows you throwing &lt;code&gt;IllegalStateException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;check&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;check&lt;/code&gt; checks states.
+Seeing the following sources shows you throwing &lt;code&gt;IllegalStateException&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;@kotlin.internal.InlineOnly
 public inline fun check(value: Boolean, lazyMessage: () -&amp;gt; Any): Unit {
@@ -57,12 +59,13 @@ public inline fun check(value: Boolean, lazyMessage: () -&amp;gt; Any): Unit {
 &lt;h2 id=&#34;assertion-validation:743419a5e94c81a7bec95dd224f1a608&#34;&gt;Assertion validation&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;assert
-An assertion is described as a row and serves as a checkpoint.
+&lt;li&gt;assert&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An assertion is described as a row and serves as a checkpoint.
 If you describe it before any processing you can check the precondition and if it is
 later you can check the postcondition.
-Runtime assertions have been enabled on the JVM using the &lt;code&gt;-ea&lt;/code&gt; option.&lt;/li&gt;
-&lt;/ul&gt;
+Runtime assertions have been enabled on the JVM using the &lt;code&gt;-ea&lt;/code&gt; option.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;@kotlin.internal.InlineOnly
 public inline fun assert(value: Boolean, lazyMessage:() -&amp;gt; Any) {
