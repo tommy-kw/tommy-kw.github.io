@@ -98,6 +98,23 @@
                             
                                 <article class="post">
 <header>
+<h2><a href="http://tommykw.github.io/post/platform-types/">Platform Types </a> </h2>
+<div class="post-meta">Thu, Jan 19, 2017 - Read in 1 Min </div>
+</header>
+<div class="summary">
+    Kotlin is nullsafe, but there are things to keep in mind when using Kotlin from Java. Kotlin has an implementation that accepts it as T! Type called Platform types. For example, it is as follows. fun getString(key:String, defValue:String) = sharedPref.getString(key:String, defValue:String) // platform types. return value is T! fun getString(key:String, defValue:String): String? = sharedPref.getString(key:String, defValue:String) // Declare it to be nullable The above is a simplified method of SharedPreferences#getString. but SharedPreferences#getString returns @Nullable String.
+</div>
+<footer>
+<a href='http://tommykw.github.io/post/platform-types/'><nobr>Read more →</nobr></a>
+</footer>
+</article>
+
+
+                            
+                        
+                            
+                                <article class="post">
+<header>
 <h2><a href="http://tommykw.github.io/post/semantic-validation/">Semantic validation </a> </h2>
 <div class="post-meta">Sun, Nov 13, 2016 - Read in 1 Min </div>
 </header>
@@ -242,23 +259,6 @@
 </div>
 <footer>
 <a href='http://tommykw.github.io/post/drag-and-drop/'><nobr>Read more →</nobr></a>
-</footer>
-</article>
-
-
-                            
-                        
-                            
-                                <article class="post">
-<header>
-<h2><a href="http://tommykw.github.io/post/long-as-ymd/">Long as ymd </a> </h2>
-<div class="post-meta">Sat, Jul 30, 2016 - Read in 1 Min </div>
-</header>
-<div class="summary">
-    I seconds from the time, minute, I tried to calculate the time in Kotlin. fun longAsYmd(Long time): Unit { val t = time.toInt() val second = t % 60 val minutes = t / 60 % 60 val hour = t / 60 / 60 }
-</div>
-<footer>
-<a href='http://tommykw.github.io/post/long-as-ymd/'><nobr>Read more →</nobr></a>
 </footer>
 </article>
 

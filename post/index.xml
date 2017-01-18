@@ -7,7 +7,28 @@
     <language>en-us</language>
     
     
-    <updated>Sun, 13 Nov 2016 11:54:37 JST</updated>
+    <updated>Thu, 19 Jan 2017 06:15:57 JST</updated>
+    
+    <item>
+      <title>Platform Types</title>
+      <link>http://tommykw.github.io/post/platform-types/</link>
+      <pubDate>Thu, 19 Jan 2017 06:15:57 JST</pubDate>
+      
+      <guid>http://tommykw.github.io/post/platform-types/</guid>
+      <description>&lt;p&gt;Kotlin is nullsafe, but there are things to keep in mind when using Kotlin from Java.
+Kotlin has an implementation that accepts it as &lt;code&gt;T!&lt;/code&gt; Type called Platform types. For example, it is as follows.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fun getString(key:String, defValue:String) = sharedPref.getString(key:String, defValue:String) // platform types. return value is T!
+fun getString(key:String, defValue:String): String? = sharedPref.getString(key:String, defValue:String) // Declare it to be nullable
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above is a simplified method of &lt;code&gt;SharedPreferences#getString&lt;/code&gt;. but &lt;code&gt;SharedPreferences#getString&lt;/code&gt; returns @Nullable String.
+On the Kotlin side, since it is received as &lt;code&gt;String:T!&lt;/code&gt;, there is a possibility of crashing at runtime.&lt;/p&gt;
+
+&lt;p&gt;By describing it as &lt;code&gt;@Nullable&lt;/code&gt; on the Java side, platform types and warnings are displayed on the IDE side. in an environment where Kotlin and Java coexist,
+it is necessary to understand platform types. Let&amp;rsquo;s explicitly declare whether it is @Nullable in Java.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Semantic validation</title>
@@ -414,26 +435,6 @@ age.years // 25
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;There is a need to convert once from Single to Observable&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Protocol Buffers</title>
-      <link>http://tommykw.github.io/post/protocol-buffer/</link>
-      <pubDate>Tue, 21 Jun 2016 18:16:15 JST</pubDate>
-      
-      <guid>http://tommykw.github.io/post/protocol-buffer/</guid>
-      <description>
-
-&lt;p&gt;Protocol buffers are Google&amp;rsquo;s language-neutral, platform-neutral, extensible
-mechanism for serializing structured data.&lt;/p&gt;
-
-&lt;h2 id=&#34;installing-on-mac:9f6d726ef0757a387bacce472dcd6d5b&#34;&gt;Installing on mac&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;$ brew install protobuf 
-$ protoc --version
-libprotoc 2.6.1
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
